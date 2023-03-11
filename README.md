@@ -6,16 +6,18 @@ Note: To have an up-to-date project, verify when this template was last updated.
 
 ## Technology Stack
 
-- React
-- TypeScript
-- Blip Design System
-- Tailwind CSS
-- NPM
-- ESLint
-- Prettier
-- Vite
-- CSpell
-- Fontsource
+-   React
+-   TypeScript
+-   Blip Design System
+-   Tailwind CSS
+-   NPM
+-   ESLint
+-   Prettier
+-   Vite
+-   CSpell
+-   Fontsource
+
+<!-- TODO: Fix numbers -->
 
 ## How to re-create the template
 
@@ -26,11 +28,12 @@ Note: To have an up-to-date project, verify when this template was last updated.
 
 3. Install the Nunito Sans font using Fontsource. [Instructions here.](https://fontsource.org/docs/getting-started)
 
-   3.1. Choose which font weights & styles to use, to cut down on payload sizes. [See configuration.](./src/lib/fonts.ts)
+    3.1. Choose which font weights & styles to use, to cut down on payload sizes. [See configuration.](./src/lib/fonts.ts)
 
-   3.2. Set it as the default font with Tailwind CSS. [Instructions here.](https://tailwindcss.com/docs/font-family#customizing-the-default-font)
+    3.2. Set it as the default font with Tailwind CSS. [Instructions here.](https://tailwindcss.com/docs/font-family#customizing-the-default-font)
 
-4. Install ESLint. [Instructions here.](https://eslint.org/docs/latest/use/getting-started)
+4. Install Prettier. [Instructions here.](https://prettier.io/docs/en/install.html)
 
-5.Install Prettier
-5.1. Configure Prettier. [See configuration.](./.prettierrc)
+    1.1. Configure Prettier. [See configuration.](./.prettierrc.json)
+
+5. Install ESLint. [Instructions here.](https://eslint.org/docs/latest/use/getting-started)
