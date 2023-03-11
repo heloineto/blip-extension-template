@@ -2,6 +2,8 @@
 
 ## How to use the template
 
+<!-- TODO: Write -->
+
 Note: To have an up-to-date project, verify when this template was last updated. If you believe it was too long ago, consider recreating it following (and changing if necessary) the [steps below.](#how-to-re-create-the-template)
 
 ## Technology stack
@@ -11,11 +13,10 @@ Note: To have an up-to-date project, verify when this template was last updated.
 -   Blip Design System
 -   Tailwind CSS
 -   NPM
--   ESLint
--   Prettier
 -   Vite
--   CSpell
 -   Fontsource
+-   ESLint, Prettier & CSpell
+-   Husky with lint-staged and commitlint
 
 <!-- TODO: Fix numbers -->
 
@@ -34,7 +35,7 @@ Note: To have an up-to-date project, verify when this template was last updated.
 
 4. Install Prettier. [Instructions here.](https://prettier.io/docs/en/install.html)
 
-    4.1. Configure Prettier. [See configuration.](./.prettierrc.json)
+    4.1. Configure Prettier. [See configuration.](./package.json)
 
 5. Install ESLint. [Instructions here.](https://eslint.org/docs/latest/use/getting-started)
 
@@ -42,4 +43,15 @@ Note: To have an up-to-date project, verify when this template was last updated.
 
     5.2. Integrate Tailwind CSS with ESLint. [Instructions here.](https://github.com/francoismassart/eslint-plugin-tailwindcss#2-install-eslint-plugin-tailwindcss)
 
-    5.2. Configure ESLint. [See configuration.](./.eslintrc.cjs)
+    5.3. Configure ESLint. [See configuration.](./.eslintrc.cjs)
+
+6. Configure Git hooks
+
+    6.1. Install `husky`. [Instructions here.](https://typicode.github.io/husky/#/?id=install)
+    6.2. Install `lint-staged`. [Instructions here.](https://www.npmjs.com/package/lint-staged)
+    6.3 Install `commitlint`. [Instructions here.](https://commitlint.js.org/#/guides-local-setup?id=install-commitlint)
+
+7. Configure VScode settings
+
+    7.1 Configure settings. [See configuration.](./.vscode/settings.json)
+    7.2 Configure extensions. [See configuration.](./.vscode/extensions.json)

@@ -14,8 +14,8 @@
     "editor.defaultFormatter": "esbenp.prettier-vscode",
     "eslint.packageManager": "npm",
     "files.exclude": {
-        "**/.husky": true,
-        "**/.vscode": true
+        "**/.husky": false,
+        "**/.vscode": false
     },
     "editor.formatOnSave": true,
     "prettier.requireConfig": true
