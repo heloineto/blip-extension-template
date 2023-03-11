@@ -1,6 +1,6 @@
 const App = () => {
     return (
-        <div className="flex flex-col gap-5 text-3xl">
+        <div className="flex min-h-screen flex-col gap-5 bg-slate-900 text-3xl text-slate-100">
             <div>
                 <div className="font-thin">Nunito Sans</div>
                 <div className="font-extralight">Nunito Sans</div>
@@ -13,15 +13,15 @@ const App = () => {
                 <div className="font-black">Nunito Sans</div>
             </div>
             <div>
-                <div className="italic font-thin">Nunito Sans</div>
-                <div className="italic font-extralight">Nunito Sans</div>
-                <div className="italic font-light">Nunito Sans</div>
-                <div className="italic font-normal">Nunito Sans</div>
-                <div className="italic font-medium">Nunito Sans</div>
-                <div className="italic font-semibold">Nunito Sans</div>
-                <div className="italic font-bold">Nunito Sans</div>
-                <div className="italic font-extrabold">Nunito Sans</div>
-                <div className="italic font-black">Nunito Sans</div>
+                <div className="font-thin italic">Nunito Sans</div>
+                <div className="font-extralight italic">Nunito Sans</div>
+                <div className="font-light italic">Nunito Sans</div>
+                <div className="font-normal italic">Nunito Sans</div>
+                <div className="font-medium italic">Nunito Sans</div>
+                <div className="font-semibold italic">Nunito Sans</div>
+                <div className="font-bold italic">Nunito Sans</div>
+                <div className="font-extrabold italic">Nunito Sans</div>
+                <div className="font-black italic">Nunito Sans</div>
             </div>
         </div>
     );

@@ -4,7 +4,7 @@
 
 Note: To have an up-to-date project, verify when this template was last updated. If you believe it was too long ago, consider recreating it following (and changing if necessary) the [steps below.](#how-to-re-create-the-template)
 
-## Technology Stack
+## Technology stack
 
 -   React
 -   TypeScript
@@ -21,7 +21,7 @@ Note: To have an up-to-date project, verify when this template was last updated.
 
 ## How to re-create the template
 
-1. Automatically create a new React project using Vite. When Prompted, choose `React` With `Typescript + SWC`.
+1. Create a new React project using Vite. When Prompted, choose `React` With `Typescript + SWC`.
    [Instructions here.](https://vitejs.dev/guide/#scaffolding-your-first-vite-project)
 
 2. Install Tailwind. [Instructions here.](https://tailwindcss.com/docs/guides/vite)
@@ -34,6 +34,12 @@ Note: To have an up-to-date project, verify when this template was last updated.
 
 4. Install Prettier. [Instructions here.](https://prettier.io/docs/en/install.html)
 
-    1.1. Configure Prettier. [See configuration.](./.prettierrc.json)
+    4.1. Configure Prettier. [See configuration.](./.prettierrc.json)
 
 5. Install ESLint. [Instructions here.](https://eslint.org/docs/latest/use/getting-started)
+
+    5.1. Integrate Prettier with ESlint. [Instructions here.](https://prettier.io/docs/en/integrating-with-linters.html)
+
+    5.2. Integrate Tailwind CSS with ESLint. [Instructions here.](https://github.com/francoismassart/eslint-plugin-tailwindcss#2-install-eslint-plugin-tailwindcss)
+
+    5.2. Configure ESLint. [See configuration.](./.eslintrc.cjs)
