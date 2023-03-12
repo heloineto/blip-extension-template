@@ -45,13 +45,18 @@ Note: To have an up-to-date project, verify when this template was last updated.
 
     5.3. Configure ESLint. [See configuration.](./.eslintrc.cjs)
 
+<!-- TODO: Add React Testing Library or Enzyme -->
+
 6. Configure Git hooks
 
     6.1. Install `husky`. [Instructions here.](https://typicode.github.io/husky/#/?id=install)
+
     6.2. Install `lint-staged`. [Instructions here.](https://www.npmjs.com/package/lint-staged)
-    6.3 Install `commitlint`. [Instructions here.](https://commitlint.js.org/#/guides-local-setup?id=install-commitlint)
+
+    6.3. Install `commitlint`. [Instructions here.](https://commitlint.js.org/#/guides-local-setup?id=install-commitlint)
 
 7. Configure VScode settings
 
-    7.1 Configure settings. [See configuration.](./.vscode/settings.json)
-    7.2 Configure extensions. [See configuration.](./.vscode/extensions.json)
+    7.1. Configure settings. [See configuration.](./.vscode/settings.json)
+
+    7.2. Configure extensions. [See configuration.](./.vscode/extensions.json)
