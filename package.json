@@ -5,7 +5,7 @@
     "type": "module",
     "scripts": {
         "dev": "vite",
-        "start": "echo \"Hi\" && vite",
+        "start": "echo Deprecated: please use `npm run dev` instead. && npm run dev",
         "build": "tsc && vite build",
         "preview": "vite preview",
         "format": "prettier --write .",
