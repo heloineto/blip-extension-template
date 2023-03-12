@@ -22,7 +22,7 @@ Note: To have an up-to-date project, verify when this template was last updated.
 
 ## How to re-create the template
 
-1. Create a new React project using Vite. When Prompted, choose `React` With `Typescript + SWC`.
+1. Create a new React project using Vite. When Prompted, choose React with Typescript + SWC.
    [Instructions here.](https://vitejs.dev/guide/#scaffolding-your-first-vite-project)
 
 2. Install Tailwind. [Instructions here.](https://tailwindcss.com/docs/guides/vite)
@@ -49,11 +49,11 @@ Note: To have an up-to-date project, verify when this template was last updated.
 
 6. Configure Git hooks
 
-    6.1. Install `husky`. [Instructions here.](https://typicode.github.io/husky/#/?id=install)
+    6.1. Install husky. [Instructions here.](https://typicode.github.io/husky/#/?id=install)
 
-    6.2. Install `lint-staged`. [Instructions here.](https://www.npmjs.com/package/lint-staged)
+    6.2. Install lint-staged. [Instructions here.](https://www.npmjs.com/package/lint-staged)
 
-    6.3. Install `commitlint`. [Instructions here.](https://commitlint.js.org/#/guides-local-setup?id=install-commitlint)
+    6.3. Install commitlint. [Instructions here.](https://commitlint.js.org/#/guides-local-setup?id=install-commitlint)
 
 7. Configure VScode settings
 
