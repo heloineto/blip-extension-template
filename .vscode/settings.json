@@ -1,11 +1,5 @@
 {
-    "cSpell.words": [
-        "appsettings",
-        "fontsource",
-        "Fontsource",
-        "nunito",
-        "Nunito"
-    ],
+    "cSpell.language": "en",
     "editor.codeActionsOnSave": [
         "source.addMissingImports",
         "source.fixAll",

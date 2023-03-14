@@ -45,6 +45,8 @@ Note: To have an up-to-date project, verify when this template was last updated.
 
     5.3. Configure ESLint. [See configuration.](./.eslintrc.cjs)
 
+6. Install CSpell [Instructions here.](https://cspell.org/docs/installation/)
+
 <!-- TODO: Add React Testing Library or Enzyme -->
 
 6. Configure Git hooks

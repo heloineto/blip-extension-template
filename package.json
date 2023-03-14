@@ -5,11 +5,12 @@
     "type": "module",
     "scripts": {
         "dev": "vite",
-        "start": "echo Deprecated: please use `npm run dev` instead. && npm run dev",
+        "start": "npm run dev",
         "build": "tsc && vite build",
         "preview": "vite preview",
         "format": "prettier --write .",
         "lint": "eslint .",
+        "spell": "cspell lint .",
         "prepare": "husky install"
     },
     "dependencies": {
@@ -20,12 +21,15 @@
     "devDependencies": {
         "@commitlint/cli": "^17.4.4",
         "@commitlint/config-conventional": "^17.4.4",
+        "@cspell/dict-es-es": "^2.2.4",
+        "@cspell/dict-pt-br": "^2.1.4",
         "@types/react": "^18.0.27",
         "@types/react-dom": "^18.0.10",
         "@typescript-eslint/eslint-plugin": "^5.54.1",
         "@typescript-eslint/parser": "^5.54.1",
         "@vitejs/plugin-react-swc": "^3.0.0",
         "autoprefixer": "^10.4.14",
+        "cspell": "^6.29.3",
         "eslint": "^8.36.0",
         "eslint-config-prettier": "^8.7.0",
         "eslint-plugin-react": "^7.32.2",
@@ -38,6 +42,12 @@
         "typescript": "^4.9.5",
         "vite": "^4.1.0"
     },
+    "postcss": {
+        "plugins": {
+            "tailwindcss": {},
+            "autoprefixer": {}
+        }
+    },
     "prettier": {
         "singleQuote": true,
         "trailingComma": "none",
@@ -46,10 +56,39 @@
         "useTabs": false,
         "semi": true
     },
+    "commitlint": {
+        "extends": [
+            "@commitlint/config-conventional"
+        ]
+    },
     "lint-staged": {
         "./src/**/*": [
             "prettier --write",
             "eslint --fix"
+        ]
+    },
+    "cspell": {
+        "import": [
+            "@cspell/dict-pt-br/cspell-ext.json",
+            "@cspell/dict-es-es/cspell-ext.json"
+        ],
+        "language": "en,es,pt,pt_BR",
+        "ignorePaths": [
+            "node_modules",
+            "dist",
+            "public"
+        ],
+        "words": [
+            "appsettings",
+            "commitlint",
+            "fontsource",
+            "Fontsource",
+            "Heloi",
+            "Neto",
+            "nunito",
+            "Nunito",
+            "prestart",
+            "tailwindcss"
         ]
     }
 }
