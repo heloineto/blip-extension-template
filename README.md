@@ -17,6 +17,8 @@ Note: To have an up-to-date project, verify when this template was last updated.
 -   Fontsource
 -   ESLint, Prettier & CSpell
 -   Husky with lint-staged and commitlint
+-   React Testing Library
+-   i18next
 
 <!-- TODO: Fix numbers -->
 
@@ -45,7 +47,17 @@ Note: To have an up-to-date project, verify when this template was last updated.
 
     5.3. Configure ESLint. [See configuration.](./.eslintrc.cjs)
 
-6. Install CSpell [Instructions here.](https://cspell.org/docs/installation/)
+6. Install CSpell. [Instructions here.](https://cspell.org/docs/installation/)
+
+    6.2. Add CSpell's Brazilian Portuguese Dictionary. [Instructions here.](https://github.com/streetsidesoftware/cspell-dicts/tree/main/dictionaries/pt_BR)
+
+    6.2. Add CSpell's Spanish Dictionary. [Instructions here.](https://github.com/streetsidesoftware/cspell-dicts/tree/main/dictionaries/es_ES)
+
+    6.2. Configure CSpell. [See configuration.](./package.json)
+
+7. Install React Testing Library. [Instructions here.](https://cspell.org/docs/installation/)
+
+8. Install i18next (internationalization)
 
 <!-- TODO: Add React Testing Library or Enzyme -->
 
@@ -57,8 +69,18 @@ Note: To have an up-to-date project, verify when this template was last updated.
 
     6.3. Install commitlint. [Instructions here.](https://commitlint.js.org/#/guides-local-setup?id=install-commitlint)
 
-7. Configure VScode settings
+7. Install Blip Design System. [Instructions here.](https://design.take.net/240287753/p/216ef2-instalao/t/773b48)
+
+8. Configure VScode settings
 
     7.1. Configure settings. [See configuration.](./.vscode/settings.json)
 
     7.2. Configure extensions. [See configuration.](./.vscode/extensions.json)
+
+9. Finishing touches
+
+    9.1. Set the website title to "Blip Extension".
+
+    9.2. Set the website favicon. [See favicon.](./public/blip.svg)
+
+Note: To keep the project's root folder clean, transform the configuration files with few lines into keys on `package.json`. Example: The file `.lint-staged.config.cjs` can be a `lint-staged` key on `package.json`.

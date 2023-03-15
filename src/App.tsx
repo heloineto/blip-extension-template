@@ -1,5 +1,9 @@
 const App = () => {
-    return <div className="">Oi amigos, tudo certo?</div>;
+    return (
+        <div className="h-screen w-screen">
+            <bds-input />
+        </div>
+    );
 };
 
 export default App;
