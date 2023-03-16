@@ -1,9 +1,5 @@
-import {
-    applyPolyfills,
-    defineCustomElements,
-    JSX as LocalJSX
-} from 'blip-ds/loader';
-import { DetailedHTMLProps, HTMLAttributes } from 'react';
+import type { JSX as LocalJSX } from 'blip-ds/loader';
+import type { DetailedHTMLProps, HTMLAttributes } from 'react';
 
 type StencilToReactElements<T = LocalJSX.IntrinsicElements> = {
     [P in keyof T]?: T[P] &
@@ -34,17 +30,13 @@ declare global {
     }
 }
 
-const define = async () => {
-    console.log('BEFORE applyPolyfills');
+const loadBlipDs = async () => {
+    const { applyPolyfills, defineCustomElements } = await import(
+        'blip-ds/loader'
+    );
 
     await applyPolyfills();
-
-    console.log('AFTER applyPolyfills');
-    console.log('BEFORE defineCustomElements');
-
     await defineCustomElements(window);
-
-    console.log('AFTER defineCustomElements');
 };
 
-void define();
+void loadBlipDs();

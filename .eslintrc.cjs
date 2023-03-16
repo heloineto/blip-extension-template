@@ -34,5 +34,7 @@ module.exports = {
     plugins: ['react', '@typescript-eslint'],
     settings: { react: { version: 'detect' } },
     ignorePatterns: ['dist'],
-    rules: {}
+    rules: {
+        '@typescript-eslint/consistent-type-imports': 'error'
+    }
 };

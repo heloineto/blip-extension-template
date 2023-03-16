@@ -71,6 +71,8 @@ Note: To have an up-to-date project, verify when this template was last updated.
 
 7. Install Blip Design System. [Instructions here.](https://design.take.net/240287753/p/216ef2-instalao/t/773b48)
 
+    7.1. Add `optimizeDeps: { exclude: ['blip-ds/loader'] }` to `./vite.config.ts`. This is a workaround to make blip-ds work with Vite. [See issue](https://github.com/vitejs/vite/issues/12434#issue-1626394546)
+
 8. Configure VScode settings
 
     7.1. Configure settings. [See configuration.](./.vscode/settings.json)
