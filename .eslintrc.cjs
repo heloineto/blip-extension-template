@@ -19,7 +19,7 @@ module.exports = {
     },
     overrides: [
         {
-            files: ['src/**/*'],
+            files: ['src/**/*.*'],
             extends: [
                 'plugin:@typescript-eslint/strict',
                 'plugin:@typescript-eslint/recommended-requiring-type-checking'
@@ -35,6 +35,8 @@ module.exports = {
     settings: { react: { version: 'detect' } },
     ignorePatterns: ['dist'],
     rules: {
-        '@typescript-eslint/consistent-type-imports': 'error'
+        '@typescript-eslint/consistent-type-imports': 'error',
+        'react/self-closing-comp': 'error',
+        'react/no-array-index-key': 'error'
     }
 };

@@ -22,7 +22,11 @@ Note: To have an up-to-date project, verify when this template was last updated.
 
 <!-- TODO: Fix numbers -->
 
-## How to re-create the template
+## Other templates
+
+-   [JavaScript Template]()
+
+## How to re-create this template
 
 1. Create a new React project using Vite. When Prompted, choose React with Typescript + SWC.
    [Instructions here.](https://vitejs.dev/guide/#scaffolding-your-first-vite-project)
@@ -57,7 +61,7 @@ Note: To have an up-to-date project, verify when this template was last updated.
 
 7. Install React Testing Library. [Instructions here.](https://cspell.org/docs/installation/)
 
-8. Install i18next (internationalization)
+8. Install i18next (internationalization) [Instructions here.](https://react.i18next.com/getting-started)
 
 <!-- TODO: Add React Testing Library or Enzyme -->
 

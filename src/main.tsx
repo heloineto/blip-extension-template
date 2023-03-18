@@ -1,9 +1,9 @@
 import React from 'react';
 import App from './App';
 import './index.css';
-import './lib/blip-ds';
-import './lib/fonts';
-import root from './lib/root';
+import './lib/setup/blip-ds';
+import './lib/setup/fonts';
+import root from './lib/setup/root';
 
 root.render(
     <React.StrictMode>

@@ -25,4 +25,4 @@ dist-ssr
 *.sw?
 
 # Azure DevOps
-src/config/appsettings.development.json
+src/lib/config/appsettings.development.json
