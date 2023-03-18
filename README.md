@@ -19,6 +19,7 @@ Note: To have an up-to-date project, verify when this template was last updated.
 -   Husky with lint-staged and commitlint
 -   React Testing Library
 -   i18next
+-   React Router DOM
 
 <!-- TODO: Fix numbers -->
 
@@ -31,7 +32,9 @@ Note: To have an up-to-date project, verify when this template was last updated.
 1. Create a new React project using Vite. When Prompted, choose React with Typescript + SWC.
    [Instructions here.](https://vitejs.dev/guide/#scaffolding-your-first-vite-project)
 
-2. Install Tailwind. [Instructions here.](https://tailwindcss.com/docs/guides/vite)
+2. Install Blip Design System. [Instructions here.](https://design.take.net/240287753/p/216ef2-instalao/t/773b48)
+
+    7.1. Add `optimizeDeps: { exclude: ['blip-ds/loader'] }` to `./vite.config.ts`. This is a workaround to make blip-ds work with Vite. [See issue](https://github.com/vitejs/vite/issues/12434#issue-1626394546)
 
 3. Install the Nunito Sans font using Fontsource. [Instructions here.](https://fontsource.org/docs/getting-started)
 
@@ -51,19 +54,9 @@ Note: To have an up-to-date project, verify when this template was last updated.
 
     5.3. Configure ESLint. [See configuration.](./.eslintrc.cjs)
 
-6. Install CSpell. [Instructions here.](https://cspell.org/docs/installation/)
+6. Install React Testing Library. [Instructions here.](https://cspell.org/docs/installation/)
 
-    6.2. Add CSpell's Brazilian Portuguese Dictionary. [Instructions here.](https://github.com/streetsidesoftware/cspell-dicts/tree/main/dictionaries/pt_BR)
-
-    6.2. Add CSpell's Spanish Dictionary. [Instructions here.](https://github.com/streetsidesoftware/cspell-dicts/tree/main/dictionaries/es_ES)
-
-    6.2. Configure CSpell. [See configuration.](./package.json)
-
-7. Install React Testing Library. [Instructions here.](https://cspell.org/docs/installation/)
-
-8. Install i18next (internationalization) [Instructions here.](https://react.i18next.com/getting-started)
-
-9. Configure Git hooks
+7. Configure Git hooks
 
     6.1. Install husky. [Instructions here.](https://typicode.github.io/husky/#/?id=install)
 
@@ -71,17 +64,27 @@ Note: To have an up-to-date project, verify when this template was last updated.
 
     6.3. Install commitlint. [Instructions here.](https://commitlint.js.org/#/guides-local-setup?id=install-commitlint)
 
-10. Install Blip Design System. [Instructions here.](https://design.take.net/240287753/p/216ef2-instalao/t/773b48)
-
-    7.1. Add `optimizeDeps: { exclude: ['blip-ds/loader'] }` to `./vite.config.ts`. This is a workaround to make blip-ds work with Vite. [See issue](https://github.com/vitejs/vite/issues/12434#issue-1626394546)
-
-11. Configure VScode settings
+8. Configure VScode settings
 
     7.1. Configure settings. [See configuration.](./.vscode/settings.json)
 
     7.2. Configure extensions. [See configuration.](./.vscode/extensions.json)
 
-12. Install React Router [Instructions here.]()
+9. Install Tailwind. [Instructions here.](https://tailwindcss.com/docs/guides/vite)
+
+10. Install CSpell. [Instructions here.](https://cspell.org/docs/installation/)
+
+    6.2. Add CSpell's Brazilian Portuguese Dictionary. [Instructions here.](https://github.com/streetsidesoftware/cspell-dicts/tree/main/dictionaries/pt_BR)
+
+    6.2. Add CSpell's Spanish Dictionary. [Instructions here.](https://github.com/streetsidesoftware/cspell-dicts/tree/main/dictionaries/es_ES)
+
+    6.2. Configure CSpell. [See configuration.](./package.json)
+
+11. Install i18next. [Instructions here.](https://react.i18next.com/getting-started)
+
+    8.1. Install i18next-http-backend. [Instructions here.](https://react.i18next.com/getting-started)
+
+12. Install React Router Dom [Instructions here.]()
 
 13. Finishing touches
 
@@ -90,5 +93,7 @@ Note: To have an up-to-date project, verify when this template was last updated.
     9.2. Set the website favicon. [See favicon.](./public/blip.svg)
 
     9.3. Install the `tailwind-blip-ds`. [Instructions here.](https://github.com/heloineto-take/tailwind-blip-ds#installation)
+
+### Recommended packages
 
 Note: To keep the project's root folder clean, transform the configuration files with few lines into keys on `package.json`. Example: The file `.lint-staged.config.cjs` can be a `lint-staged` key on `package.json`.

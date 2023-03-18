@@ -3,6 +3,7 @@ import App from './App';
 import './index.css';
 import './lib/setup/blip-ds';
 import './lib/setup/fonts';
+import './lib/setup/i18n';
 import root from './lib/setup/root';
 
 root.render(
