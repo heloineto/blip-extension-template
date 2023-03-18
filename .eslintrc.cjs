@@ -32,11 +32,19 @@ module.exports = {
         }
     ],
     plugins: ['react', '@typescript-eslint'],
-    settings: { react: { version: 'detect' } },
+    settings: {
+        react: { version: 'detect' }
+    },
     ignorePatterns: ['dist'],
     rules: {
         '@typescript-eslint/consistent-type-imports': 'error',
         'react/self-closing-comp': 'error',
-        'react/no-array-index-key': 'error'
+        'react/no-array-index-key': 'error',
+        'tailwindcss/no-custom-classname': [
+            'error',
+            {
+                config: './tailwind.config.cjs'
+            }
+        ]
     }
 };

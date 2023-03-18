@@ -63,9 +63,7 @@ Note: To have an up-to-date project, verify when this template was last updated.
 
 8. Install i18next (internationalization) [Instructions here.](https://react.i18next.com/getting-started)
 
-<!-- TODO: Add React Testing Library or Enzyme -->
-
-6. Configure Git hooks
+9. Configure Git hooks
 
     6.1. Install husky. [Instructions here.](https://typicode.github.io/husky/#/?id=install)
 
@@ -73,20 +71,24 @@ Note: To have an up-to-date project, verify when this template was last updated.
 
     6.3. Install commitlint. [Instructions here.](https://commitlint.js.org/#/guides-local-setup?id=install-commitlint)
 
-7. Install Blip Design System. [Instructions here.](https://design.take.net/240287753/p/216ef2-instalao/t/773b48)
+10. Install Blip Design System. [Instructions here.](https://design.take.net/240287753/p/216ef2-instalao/t/773b48)
 
     7.1. Add `optimizeDeps: { exclude: ['blip-ds/loader'] }` to `./vite.config.ts`. This is a workaround to make blip-ds work with Vite. [See issue](https://github.com/vitejs/vite/issues/12434#issue-1626394546)
 
-8. Configure VScode settings
+11. Configure VScode settings
 
     7.1. Configure settings. [See configuration.](./.vscode/settings.json)
 
     7.2. Configure extensions. [See configuration.](./.vscode/extensions.json)
 
-9. Finishing touches
+12. Install React Router [Instructions here.]()
+
+13. Finishing touches
 
     9.1. Set the website title to "Blip Extension".
 
     9.2. Set the website favicon. [See favicon.](./public/blip.svg)
+
+    9.3. Install the `tailwind-blip-ds`. [Instructions here.](https://github.com/heloineto-take/tailwind-blip-ds#installation)
 
 Note: To keep the project's root folder clean, transform the configuration files with few lines into keys on `package.json`. Example: The file `.lint-staged.config.cjs` can be a `lint-staged` key on `package.json`.
