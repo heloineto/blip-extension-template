@@ -84,6 +84,8 @@ Note: To have an up-to-date project, verify when this template was last updated.
 
     8.1. Install i18next-http-backend. [Instructions here.](https://react.i18next.com/getting-started)
 
+    8.2. Add type safety. [Instructions here.](https://www.i18next.com/overview/typescript)
+
 12. Install React Router Dom [Instructions here.]()
 
 13. Finishing touches
