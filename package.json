@@ -11,7 +11,8 @@
         "format": "prettier --write .",
         "lint": "eslint .",
         "spell": "cspell lint .",
-        "prepare": "husky install"
+        "prepare": "husky install",
+        "type-check": "tsc"
     },
     "dependencies": {
         "@fontsource/nunito-sans": "^4.5.10",
@@ -71,7 +72,8 @@
     "lint-staged": {
         "./src/**/*": [
             "prettier --write",
-            "eslint --fix"
+            "eslint --fix",
+            "tsc"
         ]
     },
     "cspell": {
