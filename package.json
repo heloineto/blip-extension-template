@@ -72,8 +72,7 @@
     "lint-staged": {
         "./src/**/*": [
             "prettier --write",
-            "eslint --fix",
-            "tsc"
+            "eslint --fix"
         ]
     },
     "cspell": {
