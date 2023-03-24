@@ -6,7 +6,7 @@
 
 Note: To have an up-to-date project, verify when this template was last updated. If you believe it was too long ago, consider recreating it following (and changing if necessary) the [steps below.](#how-to-re-create-the-template)
 
-## Technology stack
+##
 
 -   React
 -   TypeScript
@@ -94,7 +94,7 @@ Note: To have an up-to-date project, verify when this template was last updated.
 
     9.2. Set the website favicon. [See favicon.](./public/blip.svg)
 
-    9.3. Install the `tailwind-blip-ds`. [Instructions here.](https://github.com/heloineto-take/tailwind-blip-ds#installation)
+    9.3. Install `tailwind-blip-ds`. [Instructions here.](https://github.com/heloineto-take/tailwind-blip-ds#installation)
 
 ### Recommended packages
 
