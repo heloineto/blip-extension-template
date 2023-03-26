@@ -1,5 +1,6 @@
 {
     "header": {
-        "title": "Template de Extensão"
+        "title": "Template de Extensão",
+        "information": "Uma extensão Blip é uma maneira de conectar soluções não oficiais para aprimorar os recursos do portal."
     }
 }

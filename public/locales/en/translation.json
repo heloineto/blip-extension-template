@@ -1,5 +1,6 @@
 {
     "header": {
-        "title": "Extension Template"
+        "title": "Extension Template",
+        "information": "Blip extension it's a technology-agnostic way to plug unofficial features to enhance the portal capabilities."
     }
 }

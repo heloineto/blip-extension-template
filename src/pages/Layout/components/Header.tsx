@@ -16,7 +16,7 @@ const Header = () => {
                     >
                         <bds-tooltip
                             position="right-center"
-                            tooltip-text="Blip extension it's a technology-agnostic way to plug unofficial features to enhance the portal capabilities."
+                            tooltip-text={t('header.information')}
                         >
                             <bds-icon name="info" theme="solid">
                                 Hover me
