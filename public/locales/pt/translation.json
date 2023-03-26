@@ -2,5 +2,12 @@
     "header": {
         "title": "Template de Extensão",
         "information": "Uma extensão Blip é uma maneira de conectar soluções não oficiais para aprimorar os recursos do portal."
+    },
+    "home": {
+        "title": "Este é um modelo de extensão básico",
+        "subtitle": "Edite <codeBlock> src/pages/Home/Home.tsx </codeBlock> e salve para recarregar.",
+        "button-count_one": "Botão pressionado {{ count }} vez",
+        "button-count_other": "Botão pressionado {{ count }} vezes",
+        "button-count_zero": "Botão pressionado {{ count }} vezes"
     }
 }

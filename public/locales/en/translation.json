@@ -1,6 +1,13 @@
 {
     "header": {
         "title": "Extension Template",
-        "information": "Blip extension it's a technology-agnostic way to plug unofficial features to enhance the portal capabilities."
+        "information": "A Blip extension it's a technology-agnostic way to plug unofficial features to enhance the portal capabilities."
+    },
+    "home": {
+        "title": "This is a basic plugin template.",
+        "subtitle": "Edit <codeBlock> src/pages/Home/Home.tsx </codeBlock> and save to reload.",
+        "button-count_one": "Botão clicado {{ count }} time",
+        "button-count_other": "Button clicked {{ count }} times",
+        "button-count_zero": "Button clicked {{ count }} times"
     }
 }
