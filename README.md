@@ -98,7 +98,9 @@ Note: To have an up-to-date project, verify when this template was last updated.
 
 11. Install React Router Dom [Instructions here.](https://reactrouter.com/en/main/start/tutorial#setup)
 
-12. Install React Testing Library. [Instructions here.](https://testing-library.com/docs/react-testing-library/intro/)
+12. Install Vitest. [Instructions here.](https://vitest.dev/guide/#adding-vitest-to-your-project)
+
+    12.1. Install React Testing Library. [Instructions here.](https://testing-library.com/docs/react-testing-library/intro/)
 
 13. Install the iframe-message-proxy package
 
