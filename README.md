@@ -98,7 +98,7 @@ Note: To have an up-to-date project, verify when this template was last updated.
 
 11. Install React Router Dom [Instructions here.](https://reactrouter.com/en/main/start/tutorial#setup)
 
-12. Install React Testing Library. [Instructions here.](https://cspell.org/docs/installation/)
+12. Install React Testing Library. [Instructions here.](https://testing-library.com/docs/react-testing-library/intro/)
 
 13. Install the iframe-message-proxy package
 
