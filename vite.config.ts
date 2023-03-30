@@ -22,7 +22,8 @@ export default defineConfig({
         coverage: {
             provider: 'c8',
             all: true,
-            include: ['src']
+            include: ['src'],
+            reporter: ['text', 'html', 'clover', 'json', 'lcov']
         }
     }
 });

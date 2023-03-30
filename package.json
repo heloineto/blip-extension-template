@@ -40,6 +40,7 @@
         "@typescript-eslint/parser": "^5.54.1",
         "@vitejs/plugin-react-swc": "^3.0.0",
         "@vitest/coverage-c8": "^0.29.7",
+        "@webcomponents/webcomponentsjs": "^2.7.0",
         "autoprefixer": "^10.4.14",
         "cspell": "^6.29.3",
         "eslint": "^8.36.0",
@@ -99,11 +100,14 @@
             "fontsource",
             "Fontsource",
             "Heloi",
+            "lcov",
             "Neto",
             "nunito",
             "Nunito",
             "prestart",
-            "tailwindcss"
+            "tailwindcss",
+            "webcomponents",
+            "webcomponentsjs"
         ]
     }
 }
