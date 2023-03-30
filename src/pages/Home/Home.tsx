@@ -27,7 +27,11 @@ const Home = () => {
                     />
                 </p>
             </div>
-            <bds-button onClick={() => setCount((prevCount) => prevCount + 1)}>
+            <bds-button
+                onClick={() => setCount((prevCount) => prevCount + 1)}
+                data-test-id="count-button"
+                data-count={count}
+            >
                 <Trans i18nKey="home.button-count" count={count} />
             </bds-button>
         </div>
