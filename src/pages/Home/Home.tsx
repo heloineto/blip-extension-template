@@ -1,8 +1,8 @@
-import { t } from 'i18next';
 import { useState } from 'react';
-import { Trans } from 'react-i18next';
+import { Trans, useTranslation } from 'react-i18next';
 
 const Home = () => {
+    const { t } = useTranslation();
     const [count, setCount] = useState(0);
 
     return (
