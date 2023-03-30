@@ -1,9 +1,9 @@
-import { t } from 'i18next';
 import { useState } from 'react';
-import { Trans } from 'react-i18next';
+import { Trans, useTranslation } from 'react-i18next';
 
 const Home = () => {
     const [count, setCount] = useState(0);
+    const { t } = useTranslation();
 
     return (
         <div className="text-neutral-dark-city flex h-full flex-col items-center justify-center gap-4 py-24">
