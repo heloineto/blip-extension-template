@@ -17,8 +17,8 @@ const router = createBrowserRouter([
 
 describe('Layout', () => {
     it('should render the children route', () => {
-        const result = render(<RouterProvider router={router} />);
+        const { getByText } = render(<RouterProvider router={router} />);
 
-        expect(result.getByText(/layout children/i)).toBeInTheDocument();
+        expect(getByText(/layout children/i)).toBeInTheDocument();
     });
 });
