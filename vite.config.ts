@@ -18,6 +18,11 @@ export default defineConfig({
     test: {
         globals: true,
         environment: 'jsdom',
-        setupFiles: './src/lib/setup/tests.ts'
+        setupFiles: './src/lib/setup/tests.ts',
+        coverage: {
+            provider: 'c8',
+            all: true,
+            include: ['src']
+        }
     }
 });
