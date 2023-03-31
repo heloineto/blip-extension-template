@@ -8,12 +8,12 @@ void i18n.use(initReactI18next).init({
     resources: {
         en: { translation: enTranslation },
         es: { translation: esTranslation },
-        pt: { translation: ptTranslation }
+        pt: { translation: ptTranslation },
     },
     fallbackLng: 'pt',
     interpolation: {
-        escapeValue: false
-    }
+        escapeValue: false,
+    },
 });
 
 declare module 'i18next' {

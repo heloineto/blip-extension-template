@@ -10,10 +10,10 @@ const router = createMemoryRouter(
             children: [
                 {
                     index: true,
-                    element: <div>child route</div>
-                }
-            ]
-        }
+                    element: <div>child route</div>,
+                },
+            ],
+        },
     ],
     { initialEntries: ['/'] }
 );
