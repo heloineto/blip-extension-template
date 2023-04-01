@@ -6,9 +6,19 @@ module.exports = {
     theme: {
         extend: {
             fontFamily: {
-                sans: ['Nunito Sans', ...defaultTheme.fontFamily.sans]
-            }
-        }
+                sans: ['Nunito Sans', ...defaultTheme.fontFamily.sans],
+            },
+            container: {
+                center: true,
+                padding: {
+                    DEFAULT: '1rem',
+                    sm: '2rem',
+                    lg: '4rem',
+                    xl: '5rem',
+                    '2xl': '6rem',
+                },
+            },
+        },
     },
-    plugins: [require('tailwind-blip-ds')]
+    plugins: [require('tailwind-blip-ds')],
 };

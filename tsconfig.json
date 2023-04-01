@@ -15,11 +15,9 @@
         "isolatedModules": true,
         "noEmit": true,
         "jsx": "react-jsx",
-        "types": ["vitest/globals"],
+        "types": ["cypress", "node"],
         "baseUrl": "./src",
-        "paths": {
-            "@/*": ["./*"]
-        }
+        "paths": { "@/*": ["./*"] }
     },
     "include": ["./src"],
     "references": [{ "path": "./tsconfig.node.json" }]

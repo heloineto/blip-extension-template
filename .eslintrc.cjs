@@ -2,7 +2,7 @@ module.exports = {
     env: {
         browser: true,
         es2021: true,
-        node: true
+        node: true,
     },
     extends: [
         'prettier',
@@ -10,30 +10,30 @@ module.exports = {
         'plugin:react/recommended',
         'plugin:react/jsx-runtime',
         'plugin:@typescript-eslint/recommended',
-        'plugin:tailwindcss/recommended'
+        'plugin:tailwindcss/recommended',
     ],
     parser: '@typescript-eslint/parser',
     parserOptions: {
         ecmaVersion: 'latest',
-        sourceType: 'module'
+        sourceType: 'module',
     },
     overrides: [
         {
             files: ['src/**/*.*'],
             extends: [
                 'plugin:@typescript-eslint/strict',
-                'plugin:@typescript-eslint/recommended-requiring-type-checking'
+                'plugin:@typescript-eslint/recommended-requiring-type-checking',
             ],
-            parserOptions: { project: ['./tsconfig.json'] }
+            parserOptions: { project: ['./tsconfig.json'] },
         },
         {
             files: ['./*.cjs'],
-            rules: { '@typescript-eslint/no-var-requires': 'off' }
-        }
+            rules: { '@typescript-eslint/no-var-requires': 'off' },
+        },
     ],
     plugins: ['react', '@typescript-eslint'],
     settings: {
-        react: { version: 'detect' }
+        react: { version: 'detect' },
     },
     ignorePatterns: ['dist'],
     rules: {
@@ -44,8 +44,8 @@ module.exports = {
         'tailwindcss/no-custom-classname': [
             'error',
             {
-                config: './tailwind.config.cjs'
-            }
-        ]
-    }
+                config: './tailwind.config.cjs',
+            },
+        ],
+    },
 };

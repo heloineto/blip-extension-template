@@ -12,15 +12,12 @@
         "lint": "eslint .",
         "spell": "cspell lint .",
         "prepare": "husky install",
-        "test": "vitest run",
-        "test:watch": "vitest watch",
-        "test:coverage": "vitest run --coverage"
+        "cy:run": "cypress run --component"
     },
     "dependencies": {
         "@fontsource/nunito-sans": "^4.5.10",
         "blip-ds": "^1.246.2",
         "i18next": "^22.4.11",
-        "i18next-http-backend": "^2.2.0",
         "react": "^18.2.0",
         "react-dom": "^18.2.0",
         "react-i18next": "^12.2.0",
@@ -31,18 +28,19 @@
         "@commitlint/config-conventional": "^17.4.4",
         "@cspell/dict-es-es": "^2.2.4",
         "@cspell/dict-pt-br": "^2.1.4",
-        "@testing-library/jest-dom": "^5.16.5",
+        "@cypress/code-coverage": "^3.10.1",
+        "@istanbuljs/nyc-config-typescript": "^1.0.2",
         "@testing-library/react": "^14.0.0",
-        "@testing-library/user-event": "^14.4.3",
+        "@types/cypress__code-coverage": "^3.10.0",
         "@types/react": "^18.0.27",
         "@types/react-dom": "^18.0.10",
         "@typescript-eslint/eslint-plugin": "^5.54.1",
         "@typescript-eslint/parser": "^5.54.1",
         "@vitejs/plugin-react-swc": "^3.0.0",
         "@vitest/coverage-c8": "^0.29.7",
-        "@webcomponents/webcomponentsjs": "^2.7.0",
         "autoprefixer": "^10.4.14",
         "cspell": "^6.29.3",
+        "cypress": "^12.9.0",
         "eslint": "^8.36.0",
         "eslint-config-prettier": "^8.7.0",
         "eslint-plugin-react": "^7.32.2",
@@ -56,7 +54,8 @@
         "tailwindcss": "^3.2.7",
         "typescript": "^4.9.5",
         "vite": "^4.1.0",
-        "vitest": "^0.29.7"
+        "vite-plugin-istanbul": "^4.0.1",
+        "vitest": "^0.29.8"
     },
     "postcss": {
         "plugins": {
@@ -66,7 +65,7 @@
     },
     "prettier": {
         "singleQuote": true,
-        "trailingComma": "none",
+        "trailingComma": "es5",
         "endOfLine": "auto",
         "tabWidth": 4,
         "useTabs": false,
@@ -81,6 +80,20 @@
         "./src/**/*": [
             "prettier --write",
             "eslint --fix"
+        ]
+    },
+    "nyc": {
+        "all": true,
+        "extends": "@istanbuljs/nyc-config-typescript",
+        "check-coverage": true,
+        "include": [
+            "src/**/*.{js,jsx,ts,tsx}"
+        ],
+        "exclude": [
+            "cypress/**/*.*",
+            "**/*.d.ts",
+            "**/*.cy.tsx",
+            "**/*.cy.ts"
         ]
     },
     "cspell": {
@@ -106,8 +119,7 @@
             "Nunito",
             "prestart",
             "tailwindcss",
-            "webcomponents",
-            "webcomponentsjs"
+            "takenet"
         ]
     }
 }

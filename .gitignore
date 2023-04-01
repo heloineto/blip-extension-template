@@ -29,3 +29,5 @@ src/lib/config/appsettings.development.json
 
 # Tests
 coverage
+.nyc_output
+cypress/videos
