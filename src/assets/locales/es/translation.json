@@ -9,5 +9,9 @@
         "button-count_one": "Botón presionado {{ count }} vez",
         "button-count_other": "Botón presionado {{ count }} veces",
         "button-count_zero": "Botón presionado {{ count }} veces"
+    },
+    "errorPage": {
+        "defaultStatus": "Error desconocido",
+        "defaultStatusText": "Ha ocurrido un error desconocido."
     }
 }

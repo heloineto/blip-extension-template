@@ -9,5 +9,9 @@
         "button-count_one": "Botão clicado {{ count }} time",
         "button-count_other": "Button clicked {{ count }} times",
         "button-count_zero": "Button clicked {{ count }} times"
+    },
+    "errorPage": {
+        "defaultStatus": "Unknown error",
+        "defaultStatusText": "An unknown error has occurred."
     }
 }

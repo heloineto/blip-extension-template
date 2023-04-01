@@ -1,3 +1,4 @@
+import { useTranslation } from 'react-i18next';
 import { useRouteError } from 'react-router-dom';
 
 type Error =
@@ -10,19 +11,20 @@ type Error =
 
 const ErrorPage = () => {
     const error = useRouteError() as Error;
+    const { t } = useTranslation();
 
     return (
         <div className="my-24 flex w-full flex-col items-center justify-center">
-            {error?.status !== undefined ? (
-                <p className="from-primary-purples-acai to-primary-main m-0 bg-gradient-to-r bg-clip-text p-0 text-9xl text-transparent">
-                    {error.status}
-                </p>
-            ) : null}
-            {error?.statusText !== undefined ? (
-                <p className="from-primary-purples-acai to-primary-main mt-1 bg-gradient-to-r bg-clip-text text-xl font-normal text-transparent">
-                    {error.statusText}
-                </p>
-            ) : null}
+            <p className="m-0 p-0 text-center text-9xl">
+                {error?.status !== undefined
+                    ? error.status
+                    : t('errorPage.defaultStatus')}
+            </p>
+            <p className="mt-1 text-xl font-normal">
+                {error?.statusText !== undefined
+                    ? error.statusText
+                    : t('errorPage.defaultStatusText')}
+            </p>
         </div>
     );
 };

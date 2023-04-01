@@ -43,9 +43,9 @@ module.exports = {
         'react/no-array-index-key': 'error',
         'tailwindcss/no-custom-classname': [
             'error',
-            {
-                config: './tailwind.config.cjs',
-            },
+            { config: './tailwind.config.cjs' },
         ],
+        // Conflicts with react-router-dom
+        '@typescript-eslint/no-throw-literal': 'off',
     },
 };
