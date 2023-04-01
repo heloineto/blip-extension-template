@@ -8,8 +8,7 @@
     "editor.defaultFormatter": "esbenp.prettier-vscode",
     "eslint.packageManager": "npm",
     "files.exclude": {
-        "**/.husky": false,
-        "**/.vscode": false
+        ".nyc_output": true
     },
     "editor.formatOnSave": true,
     "prettier.requireConfig": true
