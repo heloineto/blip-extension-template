@@ -10,7 +10,7 @@ const router = createMemoryRouter(
             children: [
                 {
                     index: true,
-                    element: <div>child route</div>,
+                    element: <>child route</>,
                 },
             ],
         },
