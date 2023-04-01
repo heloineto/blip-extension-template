@@ -100,8 +100,6 @@ Note: To have an up-to-date project, verify when this template was last updated.
 
 12. Install Vitest. [Instructions here.](https://vitest.dev/guide/#adding-vitest-to-your-project)
 
-    12.1. Install React Testing Library. [Instructions here.](https://testing-library.com/docs/react-testing-library/intro/)
-
 13. Install the iframe-message-proxy package
 
 14. Finishing touches
