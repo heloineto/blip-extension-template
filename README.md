@@ -1,22 +1,14 @@
 # Blip Extension Template
 
+This is an opinionated template for creating well-tested and multilingual extensions for the Blip platform.
+
+Note: Although recommended, you don't have use this template to create Blip extensions. You can use any stack as long as you can render your web app as an iframe in the Blip portal.
+
 ## How to use the template
 
 <!-- TODO: Write -->
 
 Note: To have an up-to-date project, verify when this template was last updated. If you believe it was too long ago, consider recreating it following (and changing if necessary) the [steps below.](#how-to-re-create-the-template)
-
-<!-- ### Minimal version
-
--   React
--   TypeScript or JavaScript
--   Blip Design System
--   NPM
--   Vite
--   Fontsource
--   ESLint & Prettier
--   React Router DOM
--   React Testing Library -->
 
 ### Complete version
 
@@ -109,7 +101,5 @@ Note: To have an up-to-date project, verify when this template was last updated.
     9.2. Set the website favicon. [See favicon.](./public/blip.svg)
 
     9.3. Install `tailwind-blip-ds`. [Instructions here.](https://github.com/heloineto-take/tailwind-blip-ds#installation)
-
-### Recommended packages
 
 Note: To keep the project's root folder clean, transform the configuration files with few lines into keys on `package.json`. Example: The file `.lint-staged.config.cjs` can be a `lint-staged` key on `package.json`.
