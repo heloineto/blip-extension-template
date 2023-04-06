@@ -14,7 +14,7 @@ const Layout = () => {
     }, [location]);
 
     return (
-        <div>
+        <div className="flex h-screen flex-col overflow-auto px-10">
             <Header />
             <Outlet />
         </div>
