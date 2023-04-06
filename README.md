@@ -24,6 +24,7 @@ Note: To have an up-to-date project, verify when this template was last updated.
 -   Husky with lint-staged and commitlint
 -   i18next
 -   React Router DOM
+-   Cypress and Vitest
 
 <!-- TODO: Fix numbers -->
 
@@ -90,7 +91,11 @@ Note: To have an up-to-date project, verify when this template was last updated.
 
 11. Install React Router Dom [Instructions here.](https://reactrouter.com/en/main/start/tutorial#setup)
 
-12. Install Vitest. [Instructions here.](https://vitest.dev/guide/#adding-vitest-to-your-project)
+12. Install Testing Libraries. [Instructions here.](https://vitest.dev/guide/#adding-vitest-to-your-project)
+
+    12.1. Install Vitest. [Instructions here.](https://vitest.dev/guide/#adding-vitest-to-your-project)
+
+    12.2. Install Cypress. [Instructions here.](https://vitest.dev/guide/#adding-vitest-to-your-project)
 
 13. Install the iframe-message-proxy package
 
@@ -101,5 +106,9 @@ Note: To have an up-to-date project, verify when this template was last updated.
     9.2. Set the website favicon. [See favicon.](./public/blip.svg)
 
     9.3. Install `tailwind-blip-ds`. [Instructions here.](https://github.com/heloineto-take/tailwind-blip-ds#installation)
+
+    <!-- TODO! -->
+
+    9.4. Add script to change the extension's prefix
 
 Note: To keep the project's root folder clean, transform the configuration files with few lines into keys on `package.json`. Example: The file `.lint-staged.config.cjs` can be a `lint-staged` key on `package.json`.
