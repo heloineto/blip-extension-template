@@ -109,6 +109,8 @@ Note: To have an up-to-date project, verify when this template was last updated.
 
     <!-- TODO! -->
 
-    9.4. Add script to change the extension's prefix
+    9.4. Add script to create a `appsettings.development.json` and change the extension's prefix
+
+    9.5. Add code language detector
 
 Note: To keep the project's root folder clean, transform the configuration files with few lines into keys on `package.json`. Example: The file `.lint-staged.config.cjs` can be a `lint-staged` key on `package.json`.
