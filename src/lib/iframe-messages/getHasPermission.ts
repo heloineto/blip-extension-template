@@ -1,5 +1,8 @@
 import { IframeMessageProxy } from 'iframe-message-proxy';
 
+type Permissions = 'write';
+type PermissionAreas = 'team';
+
 const getHasPermission = async (
     permission: Permissions,
     area: PermissionAreas
