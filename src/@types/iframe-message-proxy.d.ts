@@ -14,7 +14,39 @@ type EventAction =
     | 'getPermissionsObject'
     | 'segment';
 
-interface MessagePayload {
+interface RequestGetApplication {
+    action: 'getApplication';
+    content: string | null;
+}
+
+interface RequestSendCommand {
+    action: 'sendCommand';
+    content: {
+        destination: 'BlipService' | 'MessagingHubService';
+        command: {
+            method: 'get' | 'set' | 'delete' | 'observe' | 'subscribe';
+            to: string;
+            uri: string;
+        };
+    };
+}
+
+interface RequestGetApplication {
+    action: 'getApplication';
+    content: string | null;
+}
+
+type Permissions = 'write';
+type PermissionAreas = 'team';
+interface RequestHasPermission {
+    action: 'hasPermissions';
+    content: {
+        permissionType: Permissions;
+        customArea: PermissionAreas;
+    };
+}
+
+interface Message {
     action: EventAction;
     content?: unknown;
     caller?: string;
@@ -31,7 +63,7 @@ interface Options {
     receiveWindow?: Window;
     targetWindow?: Window;
     shouldHandleMessage?: (message: {
-        message: MessagePayload;
+        message: Message;
         trackingProperties: TrackingProperties;
     }) => boolean;
 }

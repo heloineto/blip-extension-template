@@ -19,7 +19,7 @@ const getBot = async (identity: string) => {
 
         return response;
     } catch (error) {
-        return false;
+        return null;
     }
 };
 

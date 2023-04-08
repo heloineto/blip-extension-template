@@ -12,19 +12,13 @@ const track = async (
     const trackEvent = `${config.segment.prefix}-${eventName}`;
     const payload = { ...properties, environment: config.env };
 
-    try {
-        await IframeMessageProxy.sendMessage({
-            action: 'segment',
-            content: {
-                method: 'createApplicationTrack',
-                parameters: { trackEvent, payload },
-            },
-        });
-
-        return true;
-    } catch (error) {
-        return false;
-    }
+    await IframeMessageProxy.sendMessage({
+        action: 'segment',
+        content: {
+            method: 'createApplicationTrack',
+            parameters: { trackEvent, payload },
+        },
+    });
 };
 
 export default track;

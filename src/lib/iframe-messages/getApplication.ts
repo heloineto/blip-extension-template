@@ -10,7 +10,7 @@ const getApplication = async (fullIdentity?: string) => {
 
         return response;
     } catch (error) {
-        return false;
+        return null;
     }
 };
 
