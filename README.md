@@ -99,6 +99,10 @@ Note: To have an up-to-date project, verify when this template was last updated.
 
 13. Install the iframe-message-proxy package
 
+    13.1. Add package's typescript types [See definitions.](./src/%40types/iframe-message-proxy.d.ts)
+
+    13.2. Create iframe-message-proxy helper functions (src/lib/iframe-messages)
+
 14. Finishing touches
 
     9.1. Set the website title to "Blip Extension".
@@ -111,6 +115,6 @@ Note: To have an up-to-date project, verify when this template was last updated.
 
     9.4. Add script to create a `appsettings.development.json` and change the extension's prefix
 
-    9.5. Add code language detector
+    9.5. Add blip language detector [See code.](./src/lib/setup/i18n.ts)
 
 Note: To keep the project's root folder clean, transform the configuration files with few lines into keys on `package.json`. Example: The file `.lint-staged.config.cjs` can be a `lint-staged` key on `package.json`.
