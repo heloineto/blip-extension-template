@@ -1,25 +1,25 @@
 import { IframeMessageProxy } from 'iframe-message-proxy';
+import type { GetBotResponse } from './types/getBot';
 
 const PORTAL_URL = 'postmaster@portal.blip.ai';
 
-const getBot = async (identity: string) => {
+const getBot = async (fullIdentity: string) => {
     try {
-        // TODO: Add a type for the response
-        const response = await IframeMessageProxy.sendMessage({
+        const { response } = (await IframeMessageProxy.sendMessage({
             action: 'sendCommand',
             content: {
                 destination: 'BlipService',
                 command: {
                     method: 'get',
                     to: PORTAL_URL,
-                    uri: `/applications/${identity}`,
+                    uri: `/applications/${fullIdentity}`,
                 },
             },
-        });
+        })) as GetBotResponse;
 
-        return response;
+        return { response, error: null };
     } catch (error) {
-        return null;
+        return { response: null, error };
     }
 };
 

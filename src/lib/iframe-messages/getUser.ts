@@ -1,19 +1,23 @@
 import { IframeMessageProxy } from 'iframe-message-proxy';
+import type { GetUserResponse } from './types/getUser';
 
 const getUser = async () => {
-    // TODO: Add a type for the response
-    const response = await IframeMessageProxy.sendMessage({
-        action: 'sendCommand',
-        content: {
-            command: {
-                method: 'get',
-                uri: '/account',
+    try {
+        const { response } = (await IframeMessageProxy.sendMessage({
+            action: 'sendCommand',
+            content: {
+                command: {
+                    method: 'get',
+                    uri: '/account',
+                },
+                destination: 'BlipService',
             },
-            destination: 'BlipService',
-        },
-    });
+        })) as GetUserResponse;
 
-    return response;
+        return { response, error: null };
+    } catch (error) {
+        return { response: null, error };
+    }
 };
 
 export default getUser;

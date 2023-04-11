@@ -1,12 +1,16 @@
 import { IframeMessageProxy } from 'iframe-message-proxy';
+import type { GetCurrentLanguageResponse } from './types/getCurrentLanguage';
 
 const getCurrentLanguage = async () => {
-    // TODO: Add a type for the response
-    const response = await IframeMessageProxy.sendMessage({
-        action: 'getCurrentLanguage',
-    });
+    try {
+        const { response } = (await IframeMessageProxy.sendMessage({
+            action: 'getCurrentLanguage',
+        })) as GetCurrentLanguageResponse;
 
-    return response;
+        return { response, error: null };
+    } catch (error) {
+        return { response: null, error };
+    }
 };
 
 export default getCurrentLanguage;

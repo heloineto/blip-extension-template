@@ -3,18 +3,36 @@ import esTranslation from '@/assets/locales/es/translation.json';
 import ptTranslation from '@/assets/locales/pt/translation.json';
 import i18n from 'i18next';
 import { initReactI18next } from 'react-i18next';
+import getCurrentLanguage from '../iframe-messages/getCurrentLanguage';
 
-void i18n.use(initReactI18next).init({
-    resources: {
-        en: { translation: enTranslation },
-        es: { translation: esTranslation },
-        pt: { translation: ptTranslation },
+const blipLanguageDetector = {
+    type: 'languageDetector' as const,
+    async: true,
+    detect: async (callback: (language: string) => void) => {
+        const { response } = await getCurrentLanguage();
+
+        const fallback = 'pt';
+        const language = response ?? fallback;
+        const isSupported = ['en', 'es', 'pt'].includes(language);
+
+        callback(isSupported ? language : fallback);
     },
-    fallbackLng: 'pt',
-    interpolation: {
-        escapeValue: false,
-    },
-});
+};
+
+void i18n
+    .use(initReactI18next)
+    .use(blipLanguageDetector)
+    .init({
+        resources: {
+            en: { translation: enTranslation },
+            es: { translation: esTranslation },
+            pt: { translation: ptTranslation },
+        },
+        fallbackLng: 'pt',
+        interpolation: {
+            escapeValue: false,
+        },
+    });
 
 declare module 'i18next' {
     interface CustomTypeOptions {
