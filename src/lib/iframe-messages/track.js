@@ -1,10 +1,7 @@
 import config from '@/config';
 import { IframeMessageProxy } from 'iframe-message-proxy';
 
-const track = async (
-    eventName: string,
-    properties?: Record<string, unknown>
-) => {
+const track = async (eventName, properties) => {
     if (import.meta.env.DEV) {
         return false;
     }

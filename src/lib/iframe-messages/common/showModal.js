@@ -1,18 +1,6 @@
 import { IframeMessageProxy } from 'iframe-message-proxy';
 
-interface Parameters {
-    body: string;
-    title?: string;
-    confirm?: string;
-    cancel?: string;
-}
-
-const showModal = ({
-    title,
-    body,
-    confirm = 'ok',
-    cancel = 'cancel',
-}: Parameters) => {
+const showModal = ({ title, body, confirm = 'ok', cancel = 'cancel' }) => {
     return IframeMessageProxy.sendMessage({
         action: 'showModal',
         content: {

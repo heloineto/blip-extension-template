@@ -1,5 +1,4 @@
 import type { JSX as LocalJSX } from 'blip-ds/loader';
-import { applyPolyfills, defineCustomElements } from 'blip-ds/loader';
 import type { DetailedHTMLProps, HTMLAttributes } from 'react';
 
 type StencilToReactElements<T = LocalJSX.IntrinsicElements> = {
@@ -21,11 +20,7 @@ type StencilToReact<
 > = StencilToReactElements<T> & StencilToReactRef<U>;
 
 declare global {
-    // eslint-disable-next-line @typescript-eslint/no-namespace
     export namespace JSX {
-        // eslint-disable-next-line @typescript-eslint/no-empty-interface
         interface IntrinsicElements extends StencilToReact {}
     }
 }
-
-void applyPolyfills().then(() => defineCustomElements(window));

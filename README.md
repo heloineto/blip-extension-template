@@ -95,11 +95,11 @@ Note: To have an up-to-date project, verify when this template was last updated.
 
     12.1. Install Vitest. [Instructions here.](https://vitest.dev/guide/#adding-vitest-to-your-project)
 
-    12.2. Install Cypress. [Instructions here.](https://vitest.dev/guide/#adding-vitest-to-your-project)
+    12.2. Install Cypress. [Instructions here.](https://docs.cypress.io/guides/getting-started/installing-cypress)
 
 13. Install the iframe-message-proxy package
 
-    13.1. Add package's typescript types [See definitions.](./src/%40types/iframe-message-proxy.d.ts)
+    13.1. If using TypeScript, add package's types [See definitions.](./src/%40types/iframe-message-proxy.d.ts)
 
     13.2. Create iframe-message-proxy helper functions (src/lib/iframe-messages)
 

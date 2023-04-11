@@ -1,16 +1,8 @@
 import { useTranslation } from 'react-i18next';
 import { useRouteError } from 'react-router-dom';
 
-type Error =
-    | Partial<{
-          status: number;
-          statusText: string;
-      }>
-    | undefined
-    | null;
-
 const ErrorPage = () => {
-    const error = useRouteError() as Error;
+    const error = useRouteError();
     const { t } = useTranslation();
 
     return (
