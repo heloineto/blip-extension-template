@@ -6,6 +6,8 @@ Note: Although recommended, you don't have use this template to create Blip exte
 
 ## Installation
 
+To start your project using this template, run one of the commands below:
+
 ```shell
 # TypeScript template:
 npx degit heloineto/blip-extension-template#typescript my-app
@@ -15,7 +17,14 @@ npx degit heloineto/blip-extension-template#javascript my-app
 
 ```
 
-Note: To have an up-to-date project, verify when this template was last updated. If you believe it was too long ago, consider recreating it following (and changing if necessary) the [steps below.](#how-to-re-create-the-template)
+Then, download the dependencies and start the development server
+
+```shell
+cd my-app
+
+npm install
+npm run start
+```
 
 ### Tech Stack
 
@@ -35,6 +44,8 @@ Note: To have an up-to-date project, verify when this template was last updated.
 -   Iframe Message Proxy
 
 ## How to re-create this template
+
+To have an up-to-date project, verify when this template was last updated. If you believe it was too long ago, consider recreating it following (and changing if necessary) the steps below.
 
 1. Create a new React project using Vite. When Prompted, choose React with TypeScript + SWC or JavaScript + SWC.
    [Instructions here.](https://vitejs.dev/guide/#scaffolding-your-first-vite-project)
@@ -110,8 +121,6 @@ Note: To have an up-to-date project, verify when this template was last updated.
     14.2. Set the website favicon. [See favicon.](./public/blip.svg)
 
     14.3. Install `tailwind-blip-ds`. [Instructions here.](https://github.com/heloineto-take/tailwind-blip-ds#installation)
-
-    <!-- TODO! -->
 
     14.4. Add script to create a `appsettings.development.json` and change the extension's prefix
 
