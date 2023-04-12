@@ -105,16 +105,16 @@ Note: To have an up-to-date project, verify when this template was last updated.
 
 14. Finishing touches
 
-    9.1. Set the website title to "Blip Extension".
+    14.1. Set the website title to "Blip Extension".
 
-    9.2. Set the website favicon. [See favicon.](./public/blip.svg)
+    14.2. Set the website favicon. [See favicon.](./public/blip.svg)
 
-    9.3. Install `tailwind-blip-ds`. [Instructions here.](https://github.com/heloineto-take/tailwind-blip-ds#installation)
+    14.3. Install `tailwind-blip-ds`. [Instructions here.](https://github.com/heloineto-take/tailwind-blip-ds#installation)
 
     <!-- TODO! -->
 
-    9.4. Add script to create a `appsettings.development.json` and change the extension's prefix
+    14.4. Add script to create a `appsettings.development.json` and change the extension's prefix
 
-    9.5. Add blip language detector [See code.](./src/lib/setup/i18n.ts)
+    14.5. Add blip language detector [See code.](./src/lib/setup/i18n.ts)
 
 Note: To keep the project's root folder clean, transform the configuration files with few lines into keys on `package.json`. Example: The file `.lint-staged.config.cjs` can be a `lint-staged` key on `package.json`.
