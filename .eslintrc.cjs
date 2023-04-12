@@ -11,6 +11,7 @@ module.exports = {
         'plugin:react/jsx-runtime',
         'plugin:@typescript-eslint/recommended',
         'plugin:tailwindcss/recommended',
+        'plugin:cypress/recommended',
     ],
     parser: '@typescript-eslint/parser',
     parserOptions: {
@@ -46,7 +47,5 @@ module.exports = {
             'error',
             { config: './tailwind.config.cjs' },
         ],
-        // Conflicts with react-router-dom
-        '@typescript-eslint/no-throw-literal': 'off',
     },
 };
