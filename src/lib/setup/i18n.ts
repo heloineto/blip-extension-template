@@ -5,23 +5,21 @@ import i18n from 'i18next';
 import { initReactI18next } from 'react-i18next';
 import getCurrentLanguage from '../iframe-messages/getCurrentLanguage';
 
-const blipLanguageDetector = {
-    type: 'languageDetector' as const,
-    async: true,
-    detect: async (callback: (language: string) => void) => {
-        const { response } = await getCurrentLanguage();
-
-        const fallback = 'pt';
-        const language = response ?? fallback;
-        const isSupported = ['en', 'es', 'pt'].includes(language);
-
-        callback(isSupported ? language : fallback);
-    },
-};
-
 void i18n
     .use(initReactI18next)
-    .use(blipLanguageDetector)
+    .use({
+        type: 'languageDetector',
+        async: true,
+        detect: async (callback: (language: string) => void) => {
+            const { response } = await getCurrentLanguage();
+
+            const fallback = 'pt';
+            const language = response ?? fallback;
+            const isSupported = ['en', 'es', 'pt'].includes(language);
+
+            callback(isSupported ? language : fallback);
+        },
+    })
     .init({
         resources: {
             en: { translation: enTranslation },
