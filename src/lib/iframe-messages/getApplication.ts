@@ -1,16 +1,16 @@
 import { IframeMessageProxy } from 'iframe-message-proxy';
+import type { GetApplicationResponse } from './types/getApplication';
 
 const getApplication = async (fullIdentity?: string) => {
     try {
-        // TODO: Add a type for the response
-        const response = await IframeMessageProxy.sendMessage({
+        const { response } = (await IframeMessageProxy.sendMessage({
             action: 'getApplication',
             content: fullIdentity ?? null,
-        });
+        })) as GetApplicationResponse;
 
-        return response;
+        return { response, error: null };
     } catch (error) {
-        return null;
+        return { response: null, error };
     }
 };
 

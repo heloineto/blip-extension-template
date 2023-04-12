@@ -38,6 +38,7 @@ module.exports = {
     ignorePatterns: ['dist'],
     rules: {
         'no-shadow': 'error',
+        'no-console': 'warn',
         '@typescript-eslint/consistent-type-imports': 'error',
         'react/self-closing-comp': 'error',
         'react/no-array-index-key': 'error',
