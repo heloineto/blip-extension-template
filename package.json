@@ -79,10 +79,8 @@
         ]
     },
     "lint-staged": {
-        "./src/**/*": [
-            "prettier --write",
-            "eslint --fix"
-        ]
+        "./src/**/*.*": "prettier --write",
+        "./src/**/*.{js,jsx,ts,tsx}": "eslint --fix"
     },
     "nyc": {
         "all": true,
