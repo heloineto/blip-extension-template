@@ -17,7 +17,7 @@ npx degit heloineto/blip-extension-template#javascript my-app
 
 ```
 
-Then, download the dependencies and start the development server
+Then, install the dependencies and start the development server
 
 ```shell
 cd my-app
