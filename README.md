@@ -29,7 +29,7 @@ npm run start
 ### Tech Stack
 
 -   React
--   TypeScript or JavaScript
+-   TypeScript
 -   NPM
 -   Vite
 -   React Testing Library
