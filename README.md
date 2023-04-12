@@ -4,17 +4,23 @@ This is an opinionated template for creating well-tested and multilingual extens
 
 Note: Although recommended, you don't have use this template to create Blip extensions. You can use any stack as long as you can render your web app as an iframe in the Blip portal.
 
-## How to use the template
+## Installation
 
-<!-- TODO: Write -->
+```shell
+# TypeScript template:
+npx degit heloineto/blip-extension-template#typescript my-app
+
+# JavaScript template:
+npx degit heloineto/blip-extension-template#javascript my-app
+
+```
 
 Note: To have an up-to-date project, verify when this template was last updated. If you believe it was too long ago, consider recreating it following (and changing if necessary) the [steps below.](#how-to-re-create-the-template)
 
-### Complete version
+### Tech Stack
 
 -   React
 -   TypeScript or JavaScript
--   Blip Design System
 -   NPM
 -   Vite
 -   React Testing Library
@@ -25,12 +31,8 @@ Note: To have an up-to-date project, verify when this template was last updated.
 -   i18next
 -   React Router DOM
 -   Cypress and Vitest
-
-<!-- TODO: Fix numbers -->
-
-## Other templates
-
--   [JavaScript Template]()
+-   Blip Design System
+-   Iframe Message Proxy
 
 ## How to re-create this template
 
