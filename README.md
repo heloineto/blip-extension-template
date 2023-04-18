@@ -6,15 +6,10 @@ Note: Although recommended, you don't have use this template to create Blip exte
 
 ## Installation
 
-To start your project using this template, run one of the commands below:
+To start your project using this template, run the command below:
 
 ```shell
-# TypeScript template:
 npx degit heloineto/blip-extension-template#typescript my-app
-
-# JavaScript template:
-npx degit heloineto/blip-extension-template#javascript my-app
-
 ```
 
 Then, install the dependencies and start the development server
