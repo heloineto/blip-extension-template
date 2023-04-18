@@ -32,7 +32,6 @@ npm run start
 -   TypeScript
 -   NPM
 -   Vite
--   React Testing Library
 -   ESLint, Prettier & CSpell
 -   Tailwind CSS
 -   Fontsource
