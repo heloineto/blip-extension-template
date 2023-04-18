@@ -9,10 +9,6 @@ Note: Although recommended, you don't have use this template to create Blip exte
 To start your project using this template, run one of the commands below:
 
 ```shell
-# TypeScript template:
-npx degit heloineto/blip-extension-template#typescript my-app
-
-# JavaScript template:
 npx degit heloineto/blip-extension-template#javascript my-app
 
 ```
