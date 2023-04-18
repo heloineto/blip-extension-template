@@ -1,5 +1,3 @@
-/* eslint-disable @typescript-eslint/no-var-requires */
-
 const fs = require('node:fs');
 const prodSettings = require('../src/config/appsettings.json');
 
