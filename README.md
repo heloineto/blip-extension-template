@@ -6,14 +6,10 @@ Note: Although recommended, you don't have use this template to create Blip exte
 
 ## Installation
 
-To start your project using this template, run one of the commands below:
+To start your project using this template, run the command below:
 
 ```shell
-# TypeScript template:
-npx degit heloineto/blip-extension-template#typescript my-app
-
-# JavaScript template:
-npx degit heloineto/blip-extension-template#javascript my-app
+npx degit heloineto/blip-extension-template#growth my-app
 
 ```
 
@@ -29,7 +25,7 @@ npm run start
 ### Tech Stack
 
 -   React
--   TypeScript or JavaScript
+-   TypeScript
 -   NPM
 -   Vite
 -   ESLint, Prettier & CSpell
@@ -41,6 +37,7 @@ npm run start
 -   Cypress and Vitest
 -   Blip Design System
 -   Iframe Message Proxy
+-   Blip Feedback Footer
 
 ## How to re-create this template
 
