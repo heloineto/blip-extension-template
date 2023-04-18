@@ -28,7 +28,7 @@ module.exports = {
             parserOptions: { project: ['./tsconfig.json'] },
         },
         {
-            files: ['./*.cjs'],
+            files: ['**/*.cjs'],
             rules: { '@typescript-eslint/no-var-requires': 'off' },
         },
     ],
