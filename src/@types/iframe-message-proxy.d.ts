@@ -40,7 +40,10 @@ interface IframeMessageProxyType {
     config: (options?: Options) => IframeMessageProxyType;
     listen: () => void;
     stopListen: () => void;
-    sendMessage: (payload: MessagePayload) => Promise<unknown>;
+    sendMessage: (payload: Message) => Promise<{
+        response: unknown;
+        trackingProperties: TrackingProperties;
+    }>;
 }
 
 declare module 'iframe-message-proxy' {
