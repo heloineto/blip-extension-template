@@ -14,7 +14,7 @@
         "prepare": "husky install",
         "cy:run": "cypress run --component",
         "cy:open": "cypress open",
-        "postinstall": "node ./scripts/postinstall.cjs"
+        "postinstall": "node ./scripts/postinstall/index.cjs"
     },
     "dependencies": {
         "@fontsource/nunito-sans": "^4.5.10",
