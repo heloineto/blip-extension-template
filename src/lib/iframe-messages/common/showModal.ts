@@ -7,13 +7,13 @@ interface Parameters {
     cancel?: string;
 }
 
-const showModal = ({
+const showModal = async ({
     title,
     body,
     confirm = 'ok',
     cancel = 'cancel',
 }: Parameters) => {
-    return IframeMessageProxy.sendMessage({
+    await IframeMessageProxy.sendMessage({
         action: 'showModal',
         content: {
             title,
