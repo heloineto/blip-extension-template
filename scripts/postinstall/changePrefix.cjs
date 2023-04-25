@@ -1,5 +1,5 @@
 const fs = require('node:fs');
-const prodSettings = require('../src/config/appsettings.json');
+const prodSettings = require('../../src/config/appsettings.json');
 
 const PROD_SETTINGS_PATH = './src/config/appsettings.json';
 const INITIAL_PREFIX = 'blip-extension-template';
@@ -24,4 +24,4 @@ const changePrefix = (prefix) => {
     return prefix;
 };
 
-export default changePrefix;
+module.exports = changePrefix;

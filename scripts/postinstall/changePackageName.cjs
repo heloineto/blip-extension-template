@@ -17,4 +17,4 @@ const changePackageName = (name) => {
     return name;
 };
 
-export default changePackageName;
+module.exports = changePackageName;

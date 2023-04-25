@@ -1,5 +1,5 @@
 const fs = require('node:fs');
-const prodSettings = require('../src/config/appsettings.json');
+const prodSettings = require('../../src/config/appsettings.json');
 
 const DEV_SETTINGS_PATH = './src/config/appsettings.development.json';
 
@@ -13,4 +13,4 @@ const createDevSettings = (prefix) => {
     fs.writeFileSync(DEV_SETTINGS_PATH, JSON.stringify(devSettings, null, 4));
 };
 
-export default createDevSettings;
+module.exports = createDevSettings;
