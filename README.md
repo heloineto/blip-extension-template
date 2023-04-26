@@ -6,7 +6,7 @@ Note: Although recommended, you don't have use this template to create Blip exte
 
 ## Installation
 
-To start your project using this template, run one of the commands below:
+To start your project using this template, run the command below:
 
 ```shell
 npx degit heloineto/blip-extension-template#javascript my-app
