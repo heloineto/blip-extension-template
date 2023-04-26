@@ -4,7 +4,7 @@ const prodSettings = require('../src/config/appsettings.json');
 
 const DEV_SETTINGS_PATH = './src/config/appsettings.development.json';
 const PROD_SETTINGS_PATH = './src/config/appsettings.json';
-const INITIAL_PREFIX = 'blip-extension-template';
+const INITIAL_PREFIX = 'extension-template';
 const INITIAL_PACKAGE_NAME = 'blip-extension-template';
 
 const changePackageName = (name) => {
