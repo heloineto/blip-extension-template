@@ -36,22 +36,22 @@ See [create-blip-extension](https://github.com/heloineto/create-blip-extension#r
 > You can use any stack as long as you can render your web app as an iframe in the Blip portal.
 
 <!-- This stuff is kind of assumed or too "under-the-hood" -->
-<!-- -   React Router DOM -->
-<!-- -   NPM -->
-<!-- -   Vite -->
-<!-- -   Fontsource -->
+<!-- -   React Router DOM -->
+<!-- -   NPM -->
+<!-- -   Vite -->
+<!-- -   Fontsource -->
 
 ## How to create your Blip extension
 
-In this section you will learn how to setup and develop a Blip extension.
+In this section, you will learn how to set up and develop a Blip extension.
 
 > This guide assumes that you have basic knowledge of JavaScript and React concepts,
 > and know how to use the Blip platform.
 
-### What exactly is an Blip extension?
+### What exactly is a Blip extension?
 
-In technical terms, A blip extension is simply an web application viewed as an iframe inside the Blip platform.
-It can do everything an web app can, and also communicate with the main platform though the [iframe-message-proxy](https://github.com/takenet/iframe-message-proxy) API.
+In technical terms, A blip extension is simply a web application viewed as an iframe inside the Blip platform.
+It can do everything a web app can, and also communicate with the main platform though the [iframe-message-proxy](https://github.com/takenet/iframe-message-proxy) API.
 
 ### Step 1: Setup
 
@@ -61,11 +61,11 @@ After running the development server, you will be able to see the extension runn
 
 ### Step 2: Run inside the Blip platform
 
-To do that, you need to login into your Blip account and go to a bot that you want to test the extension in.
+To do that, you need to log in into your Blip account and go to a bot that you want to test the extension in.
 
 After that, follow this step-by-step guide:
 
-1. Go to the configuration button (the cog icon on the top right of the screen, bellow the profile image).
+1. Go to the configuration button (the cog icon on the top right of the screen, below the profile image).
 1. Once there, go to the advanced settings (scroll down until you see "Click here for advanced settings").
 1. Click "Continue" when the warning modal pops up.
 1. On the advanced configurations list, find the item with the Key "Plugins" and Domain "postmaster@portal.blip.ai" (or create one if it doesn't exist)
@@ -79,15 +79,15 @@ After that, follow this step-by-step guide:
         }
     }
     ```
-1. Reload the page so the changes take effect.
+1. Reload the page, so the changes take effect.
 1. Then, click on the extensions drop-down (The three dots icon in the navigation bar, after "Channels")
-1. You should now see a option called "localhost:3000". Clicking it should show your extension!
+1. You should now see an option called "localhost:3000". Clicking it should show your extension!
 
 ### Step 3: Using the Blip APIs
 
 The Blip platform provide multiple API endpoints that allow you to communicate with the main platform.
 
-See the utility functions inside `src/lib/iframe-messages` to get and idea of how that looks like.
+See the utility functions inside `src/lib/iframe-messages` to get an idea of how that looks like.
 
 You can look how to do a specific thing on the [Blip Documentation](https://docs.blip.ai/#introduction).
 
@@ -107,8 +107,7 @@ Now it's up to you. Build what you want to, and don't forget to submit it to the
 
 To have an up-to-date project, verify when this template was last updated. If you believe it was too long ago, consider recreating it following (and changing if necessary) the steps below.
 
-1. Create a new React project using Vite. When Prompted, choose React with TypeScript + SWC or JavaScript + SWC.
-   [Instructions here.](https://vitejs.dev/guide/#scaffolding-your-first-vite-project)
+1. Create a new React project using Vite. When prompted, choose React with TypeScript + SWC or JavaScript + SWC. [Instructions here.](https://vitejs.dev/guide/#scaffolding-your-first-vite-project)
 
 2. Install Blip Design System. [Instructions here.](https://design.take.net/240287753/p/216ef2-instalao/t/773b48)
 
@@ -182,6 +181,6 @@ To have an up-to-date project, verify when this template was last updated. If yo
 
     14.3. Install `tailwind-blip-ds`. [Instructions here.](https://github.com/heloineto-take/tailwind-blip-ds#installation)
 
-    14.5. Add blip language detector [See code.](./src/lib/setup/i18n.ts)
+    14.5. Add blip language detector. [See code.](./src/lib/setup/i18n.ts)
 
 Note: To keep the project's root folder clean, transform the configuration files with few lines into keys on `package.json`. Example: The file `.lint-staged.config.cjs` can be a `lint-staged` key on `package.json`.
