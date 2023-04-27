@@ -2,29 +2,24 @@
 
 This is an opinionated template for creating well-tested and multilingual extensions for the Blip platform.
 
-Note: Although recommended, you don't have use this template to create Blip extensions. You can use any stack as long as you can render your web app as an iframe in the Blip portal.
+> Note: Although recommended, you don't have use this template to create Blip extensions. You can use any stack as long as you can render your web app as an iframe in the Blip portal.
 
 ## Installation
 
-To start your project using this template, run one of the commands below:
+To start your extension using this template, run the command below:
 
 ```shell
-# TypeScript template:
-npx degit heloineto/blip-extension-template#typescript my-app
-
-# JavaScript template:
-npx degit heloineto/blip-extension-template#javascript my-app
-
+npm create blip-extension@latest
 ```
 
-Then, install the dependencies and start the development server
+Then follow the prompts!
 
-```shell
-cd my-app
+See [create-blip-extension](https://github.com/heloineto/create-blip-extension#readme) for more details supported templates.
 
-npm install
-npm run start
-```
+# How to create your Blip extension
+
+In this section you will learn how to setup and develop a Blip extension.
+This guide assumes that you have basic knowledge of JavaScript and React concepts.
 
 ### Tech Stack
 
