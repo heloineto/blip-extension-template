@@ -14,28 +14,90 @@ npm create blip-extension@latest
 
 Then follow the prompts!
 
-See [create-blip-extension](https://github.com/heloineto/create-blip-extension#readme) for more details supported templates.
+See [create-blip-extension](https://github.com/heloineto/create-blip-extension#readme) for more details on supported templates.
 
-# How to create your Blip extension
-
-In this section you will learn how to setup and develop a Blip extension.
-This guide assumes that you have basic knowledge of JavaScript and React concepts.
+> If for some reason the command above doesn't work, simply cloning this repository should suffice
 
 ### Tech Stack
 
 -   React
 -   TypeScript or JavaScript
--   NPM
--   Vite
--   ESLint, Prettier & CSpell
 -   Tailwind CSS
--   Fontsource
--   Husky with lint-staged and commitlint
--   i18next
--   React Router DOM
--   Cypress and Vitest
 -   Blip Design System
 -   Iframe Message Proxy
+-   ESLint, Prettier & CSpell
+-   Husky with lint-staged and commitlint
+-   i18next
+-   Cypress and Vitest
+
+<!-- -   React Router DOM -->
+<!-- -   NPM -->
+<!-- -   Vite -->
+<!-- -   Fontsource -->
+
+## How to create your Blip extension
+
+> This guide assumes that you have basic knowledge of JavaScript and React concepts,
+> and how to use the Blip platform.
+
+In this section you will learn how to setup and develop a Blip extension.
+
+### What exactly is an Blip extension?
+
+In technical terms, A blip extension is simply an web application viewed as an iframe inside the Blip platform.
+It can do everything an web app can, and also communicate with the main platform though the [iframe-message-proxy](https://github.com/takenet/iframe-message-proxy) API.
+
+<!-- (See the utility functions inside `src/lib/iframe-messages`) -->
+
+### Step 1: Setup
+
+Begin by scaffolding your project following the instructions on the [installation section](#installation).
+
+After running the development server, you will be able to see the extension running on http://localhost:3000/. However, that is The ideal environment for visualizing the extension is as an iframe inside the Blip platform.
+
+### Step 2: Run inside the Blip platform
+
+To do that, you need to login into your Blip account and go to a bot that you want to test the extension in.
+
+After that, follow this step-by-step guide:
+
+1. Go to the configuration button (the cog icon on the top right of the screen, bellow the profile image).
+1. Once there, go to the advanced settings (scroll down until you see "Click here for advanced settings").
+1. Click "Continue" when the warning modal pops up.
+1. On the advanced configurations list, find the item with the Key "Plugins" and Domain "postmaster@portal.blip.ai" (or create one if it doesn't exist)
+1. Edit or create the Value, which is a JSON. Add a new key-value pair, as seen below (to make it easier, a JSON formatter/editor is recommended)
+    ```JSON
+    {
+        // ...
+        "localhost:3000": {
+            "name": "localhost:3000",
+            "url": "http://localhost:3000/"
+        }
+    }
+    ```
+1. Reload the page so the changes take effect.
+1. Then, click on the extensions drop-down (The three dots icon in the navigation bar, after "Channels")
+1. You should now see a option called "localhost:3000". Clicking it should show your extension!
+
+### Step 3: Using the Blip APIs
+
+The Blip platform provide multiple API endpoints that allow you to communicate with the main platform.
+
+See the utility functions inside `src/lib/iframe-messages` to get and idea of how that looks like.
+
+You can look how to do a specific thing on the [Blip Documentation](https://docs.blip.ai/#introduction).
+
+As I understand, not everything is fully documented. If you can't find what you want to do in the documentation, I would recommend asking around in the [Blip forum](https://forum.blip.ai/).
+
+### Step 4: Using other APIs
+
+As a web application, you can use any API you want, or develop your own.
+
+Simply make HTTP requests inside your extension. [See how to do this in React](https://react.dev/reference/react/useEffect#fetching-data-with-effects).
+
+### Step 5: Develop!
+
+Now it's up to you. Build what you want to, and don't forget to submit it to the Blip Store once it's done. Happy coding!
 
 ## How to re-create this template
 
