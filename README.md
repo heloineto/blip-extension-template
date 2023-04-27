@@ -1,8 +1,10 @@
-# Blip Extension Template
-
-This is an opinionated template for creating well-tested and multilingual extensions for the Blip platform.
-
-> Note: Although recommended, you don't have use this template to create Blip extensions. You can use any stack as long as you can render your web app as an iframe in the Blip portal.
+<p align="center">
+  <img src="./public/blip.svg" width="100px" align="center" alt="Blip logo" />
+  <h1 align="center">Blip Extension Template</h1>
+  <p align="center">
+    Scaffold extensions for the Blip platform
+  </p>
+</p>
 
 ## Installation
 
@@ -16,7 +18,7 @@ Then follow the prompts!
 
 See [create-blip-extension](https://github.com/heloineto/create-blip-extension#readme) for more details on supported templates.
 
-> If for some reason the command above doesn't work, simply cloning this repository should suffice
+> If for some reason the command above doesn't work, simply cloning this repository should suffice.
 
 ### Tech Stack
 
@@ -30,6 +32,10 @@ See [create-blip-extension](https://github.com/heloineto/create-blip-extension#r
 -   i18next
 -   Cypress and Vitest
 
+> Note: Although recommended, you don't have use this template to create Blip extensions.
+> You can use any stack as long as you can render your web app as an iframe in the Blip portal.
+
+<!-- This stuff is kind of assumed or too "under-the-hood" -->
 <!-- -   React Router DOM -->
 <!-- -   NPM -->
 <!-- -   Vite -->
@@ -37,17 +43,15 @@ See [create-blip-extension](https://github.com/heloineto/create-blip-extension#r
 
 ## How to create your Blip extension
 
-> This guide assumes that you have basic knowledge of JavaScript and React concepts,
-> and how to use the Blip platform.
-
 In this section you will learn how to setup and develop a Blip extension.
+
+> This guide assumes that you have basic knowledge of JavaScript and React concepts,
+> and know how to use the Blip platform.
 
 ### What exactly is an Blip extension?
 
 In technical terms, A blip extension is simply an web application viewed as an iframe inside the Blip platform.
 It can do everything an web app can, and also communicate with the main platform though the [iframe-message-proxy](https://github.com/takenet/iframe-message-proxy) API.
-
-<!-- (See the utility functions inside `src/lib/iframe-messages`) -->
 
 ### Step 1: Setup
 
@@ -177,8 +181,6 @@ To have an up-to-date project, verify when this template was last updated. If yo
     14.2. Set the website favicon. [See favicon.](./public/blip.svg)
 
     14.3. Install `tailwind-blip-ds`. [Instructions here.](https://github.com/heloineto-take/tailwind-blip-ds#installation)
-
-    14.4. Add script to create a `appsettings.development.json` and change the extension's prefix
 
     14.5. Add blip language detector [See code.](./src/lib/setup/i18n.ts)
 
