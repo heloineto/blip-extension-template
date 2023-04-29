@@ -8,7 +8,7 @@
         "title": "Extension Template"
     },
     "home": {
-        "button-count_one": "Botão clicado {{ count }} time",
+        "button-count_one": "Button clicked {{ count }} time",
         "button-count_other": "Button clicked {{ count }} times",
         "button-count_zero": "Button clicked {{ count }} times",
         "subtitle": "Edit <codeBlock> src/pages/Home/Home.tsx </codeBlock> and save to reload.",
