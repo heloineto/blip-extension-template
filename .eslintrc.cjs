@@ -26,6 +26,9 @@ module.exports = {
                 'plugin:@typescript-eslint/recommended-requiring-type-checking',
             ],
             parserOptions: { project: ['./tsconfig.json'] },
+            rules: {
+                '@typescript-eslint/non-nullable-type-assertion-style': 'off',
+            },
         },
         {
             files: ['**/*.cjs'],
