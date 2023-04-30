@@ -13,8 +13,7 @@
         "spell": "cspell lint .",
         "prepare": "husky install",
         "cy:run": "cypress run --component",
-        "cy:open": "cypress open",
-        "postinstall": "node ./scripts/postinstall.cjs"
+        "cy:open": "cypress open"
     },
     "dependencies": {
         "@fontsource/nunito-sans": "^4.5.10",
