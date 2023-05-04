@@ -5,10 +5,12 @@ export type Config = typeof productionConfig;
 let config: Config;
 
 try {
-    const developmentConfig =
+    if (import.meta.env.DEV) {
         // eslint-disable-next-line @typescript-eslint/no-var-requires
-        require('./appsettings.development.json') as Config;
-    config = import.meta.env.DEV ? developmentConfig : productionConfig;
+        config = require('./appsettings.development.json') as Config;
+    } else {
+        config = productionConfig;
+    }
 } catch (error) {
     config = productionConfig;
 }
