@@ -31,3 +31,4 @@ src/config/appsettings.development.json
 coverage
 .nyc_output
 cypress/videos
+cypress/screenshots
