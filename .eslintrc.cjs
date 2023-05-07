@@ -12,6 +12,7 @@ module.exports = {
         'plugin:@typescript-eslint/recommended',
         'plugin:tailwindcss/recommended',
         'plugin:cypress/recommended',
+        'plugin:react-hooks/recommended',
     ],
     parser: '@typescript-eslint/parser',
     parserOptions: {
