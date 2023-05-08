@@ -1,5 +1,4 @@
 {
-    "cSpell.language": "en",
     "editor.codeActionsOnSave": [
         "source.addMissingImports",
         "source.fixAll",
@@ -10,6 +9,5 @@
     "files.exclude": {
         ".nyc_output": true
     },
-    "editor.formatOnSave": true,
-    "prettier.requireConfig": true
+    "editor.formatOnSave": true
 }
