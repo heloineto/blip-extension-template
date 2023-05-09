@@ -30,6 +30,10 @@ module.exports = {
             parserOptions: { project: ['./tsconfig.json'] },
             rules: {
                 '@typescript-eslint/non-nullable-type-assertion-style': 'off',
+                '@typescript-eslint/no-misused-promises': [
+                    'error',
+                    { checksVoidReturn: false },
+                ],
             },
         },
         {

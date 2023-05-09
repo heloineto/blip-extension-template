@@ -9,6 +9,7 @@
         "dev": "npm run start",
         "format": "prettier --write . --ignore-path .gitignore",
         "lint": "eslint .",
+        "lint:fix": "eslint . --fix",
         "spell": "cspell lint .",
         "prepare": "husky install",
         "cy:run": "cypress run --component",
