@@ -12,8 +12,10 @@
         "lint:fix": "eslint . --fix",
         "spell": "cspell lint .",
         "prepare": "husky install",
-        "cy:run": "cypress run --component",
-        "cy:open": "cypress open"
+        "cy:test": "cypress run --component",
+        "cy:open": "cypress open",
+        "test": "npm run cy:test",
+        "test:coverage": "npm run cy:test"
     },
     "dependencies": {
         "@fontsource/nunito-sans": "^4.5.10",

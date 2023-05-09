@@ -1,22 +1,11 @@
-import coverageTask from '@cypress/code-coverage/task';
 import { defineConfig } from 'cypress';
 
 export default defineConfig({
-    env: {
-        codeCoverage: {
-            exclude: 'cypress/**/*.*',
-        },
-    },
     component: {
         video: false,
         devServer: {
-            framework: 'react',
+            framework: 'create-react-app',
             bundler: 'webpack',
-        },
-        setupNodeEvents: (on, config) => {
-            coverageTask(on, config);
-
-            return config;
         },
     },
 });
