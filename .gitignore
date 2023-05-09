@@ -24,6 +24,15 @@ dist-ssr
 *.sln
 *.sw?
 
+# Production
+build
+
+# Misc
+.env.local
+.env.development.local
+.env.test.local
+.env.production.local
+
 # Azure DevOps
 src/config/appsettings.development.json
 
