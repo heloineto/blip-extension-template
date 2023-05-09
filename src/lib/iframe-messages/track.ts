@@ -1,4 +1,4 @@
-import config from '@/config';
+import config from 'config';
 import { IframeMessageProxy } from 'iframe-message-proxy';
 import isDev from '../utils/isDev';
 

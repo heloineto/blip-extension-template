@@ -11,7 +11,7 @@ export default defineConfig({
         video: false,
         devServer: {
             framework: 'react',
-            bundler: 'vite',
+            bundler: 'webpack',
         },
         setupNodeEvents: (on, config) => {
             coverageTask(on, config);

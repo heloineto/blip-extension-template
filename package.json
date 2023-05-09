@@ -2,7 +2,6 @@
     "name": "blip-extension-template",
     "private": true,
     "version": "0.0.0",
-    "type": "module",
     "scripts": {
         "start": "react-scripts start",
         "build": "react-scripts build",
@@ -113,17 +112,21 @@
         "language": "en,es,pt,pt_BR",
         "ignorePaths": [
             "node_modules",
-            "dist",
+            "build",
+            ".vscode",
             "public"
         ],
         "words": [
             "appsettings",
             "commitlint",
+            "datetime",
             "degit",
+            "firefox",
             "fontsource",
             "Fontsource",
             "Heloi",
             "heloineto",
+            "iframe",
             "lcov",
             "Neto",
             "nunito",

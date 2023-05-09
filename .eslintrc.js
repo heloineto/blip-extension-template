@@ -33,7 +33,7 @@ module.exports = {
             },
         },
         {
-            files: ['**/*.cjs'],
+            files: ['**/*.js'],
             rules: { '@typescript-eslint/no-var-requires': 'off' },
         },
     ],
@@ -41,16 +41,12 @@ module.exports = {
     settings: {
         react: { version: 'detect' },
     },
-    ignorePatterns: ['dist'],
+    ignorePatterns: ['build'],
     rules: {
         'no-shadow': 'error',
         'no-console': 'warn',
         '@typescript-eslint/consistent-type-imports': 'error',
         'react/self-closing-comp': 'error',
         'react/no-array-index-key': 'error',
-        'tailwindcss/no-custom-classname': [
-            'error',
-            { config: './tailwind.config.cjs' },
-        ],
     },
 };
