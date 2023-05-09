@@ -5,6 +5,7 @@ module.exports = {
         node: true,
     },
     extends: [
+        'react-app',
         'prettier',
         'eslint:recommended',
         'plugin:react/recommended',
