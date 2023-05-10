@@ -36,10 +36,6 @@ module.exports = {
                 ],
             },
         },
-        {
-            files: ['**/*.js'],
-            rules: { '@typescript-eslint/no-var-requires': 'off' },
-        },
     ],
     plugins: ['react', '@typescript-eslint'],
     settings: {
@@ -52,5 +48,6 @@ module.exports = {
         '@typescript-eslint/consistent-type-imports': 'error',
         'react/self-closing-comp': 'error',
         'react/no-array-index-key': 'error',
+        '@typescript-eslint/no-var-requires': 'off',
     },
 };
