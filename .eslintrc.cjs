@@ -31,10 +31,6 @@ module.exports = {
                 '@typescript-eslint/non-nullable-type-assertion-style': 'off',
             },
         },
-        {
-            files: ['**/*.cjs'],
-            rules: { '@typescript-eslint/no-var-requires': 'off' },
-        },
     ],
     plugins: ['react', '@typescript-eslint'],
     settings: {
@@ -51,5 +47,6 @@ module.exports = {
             'error',
             { config: './tailwind.config.cjs' },
         ],
+        '@typescript-eslint/no-var-requires': 'off',
     },
 };

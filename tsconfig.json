@@ -14,7 +14,7 @@
         "resolveJsonModule": true,
         "isolatedModules": true,
         "noEmit": true,
-        "jsx": "react-jsx",
+        "jsx": "preserve",
         "types": ["cypress", "node"],
         "baseUrl": "./src",
         "paths": { "@/*": ["./*"] }
