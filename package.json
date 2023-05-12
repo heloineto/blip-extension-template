@@ -1,5 +1,5 @@
 {
-    "name": "blip-ds-react",
+    "name": "blip-extension-template",
     "private": true,
     "version": "0.0.0",
     "type": "module",
@@ -8,12 +8,15 @@
         "start": "npm run dev",
         "build": "tsc && vite build",
         "preview": "vite preview",
-        "format": "prettier --write .",
+        "format": "prettier --write . --ignore-path .gitignore",
         "lint": "eslint .",
+        "lint:fix": "eslint . --fix",
         "spell": "cspell lint .",
         "prepare": "husky install",
-        "cy:run": "cypress run --component",
-        "cy:open": "cypress open"
+        "cypress": "cypress open --component",
+        "test": "npm run test:cypress",
+        "test:cypress": "cypress run --component",
+        "test:coverage": "npm run test"
     },
     "dependencies": {
         "@fontsource/nunito-sans": "^4.5.10",
