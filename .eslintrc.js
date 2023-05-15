@@ -28,6 +28,5 @@ module.exports = {
         'no-console': 'warn',
         'react/self-closing-comp': 'error',
         'react/no-array-index-key': 'error',
-        '@typescript-eslint/no-var-requires': 'off',
     },
 };

@@ -1,5 +1,5 @@
-import '@cypress/instrument-cra';
-import { defineConfig } from 'cypress';
+require('@cypress/instrument-cra');
+const { defineConfig } = require('cypress');
 
 export default defineConfig({
     env: {

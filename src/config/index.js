@@ -1,4 +1,4 @@
-import isDev from 'lib/utils/isDev';
+import isDev from '../lib/utils/isDev';
 import productionConfig from './appsettings.json';
 
 let config;
