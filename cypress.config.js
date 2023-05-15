@@ -1,7 +1,7 @@
 require('@cypress/instrument-cra');
 const { defineConfig } = require('cypress');
 
-export default defineConfig({
+module.exports = defineConfig({
     env: {
         codeCoverage: {
             exclude: 'cypress/**/*.*',
