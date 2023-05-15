@@ -1,11 +1,12 @@
-import config from '@/config';
+import config from 'config';
 import { IframeMessageProxy } from 'iframe-message-proxy';
+import isDev from '../utils/isDev';
 
 const track = async (
     eventName: string,
     properties?: Record<string, unknown>
 ) => {
-    if (import.meta.env.DEV) {
+    if (isDev) {
         return false;
     }
 

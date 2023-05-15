@@ -8,8 +8,7 @@ pnpm-debug.log*
 lerna-debug.log*
 
 node_modules
-dist
-dist-ssr
+build
 *.local
 
 # Editor directories and files
@@ -24,6 +23,13 @@ dist-ssr
 *.sln
 *.sw?
 
+
+# Misc
+.env.local
+.env.development.local
+.env.test.local
+.env.production.local
+
 # Azure DevOps
 src/config/appsettings.development.json
 
@@ -31,3 +37,4 @@ src/config/appsettings.development.json
 coverage
 .nyc_output
 cypress/videos
+cypress/screenshots

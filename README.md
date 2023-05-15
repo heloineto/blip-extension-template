@@ -57,31 +57,7 @@ It can do everything a web app can, and also communicate with the main platform 
 
 Begin by scaffolding your project following the instructions on the [installation section](#installation).
 
-After running the development server, you will be able to see the extension running on http://localhost:3000/. However, that is The ideal environment for visualizing the extension is as an iframe inside the Blip platform.
-
-### Step 2: Run inside the Blip platform
-
-To do that, you need to log in into your Blip account and go to a bot that you want to test the extension in.
-
-After that, follow this step-by-step guide:
-
-1. Go to the configuration button (the cog icon on the top right of the screen, below the profile image).
-1. Once there, go to the advanced settings (scroll down until you see "Click here for advanced settings").
-1. Click "Continue" when the warning modal pops up.
-1. On the advanced configurations list, find the item with the Key "Plugins" and Domain "postmaster@portal.blip.ai" (or create one if it doesn't exist)
-1. Edit or create the Value, which is a JSON. Add a new key-value pair, as seen below (to make it easier, a JSON formatter/editor is recommended)
-    ```JSON
-    {
-        // ...
-        "localhost:3000": {
-            "name": "localhost:3000",
-            "url": "http://localhost:3000/"
-        }
-    }
-    ```
-1. Reload the page, so the changes take effect.
-1. Then, click on the extensions drop-down (The three dots icon in the navigation bar, after "Channels")
-1. You should now see an option called "localhost:3000". Clicking it should show your extension!
+After running the development server, you will be able to see the extension running on http://localhost:3000/.
 
 ### Step 3: Using the Blip APIs
 
