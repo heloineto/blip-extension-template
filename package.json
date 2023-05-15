@@ -34,7 +34,6 @@
         "@cspell/dict-pt-br": "^2.1.4",
         "@cypress/code-coverage": "^3.10.4",
         "@cypress/instrument-cra": "^1.4.0",
-        "@istanbuljs/nyc-config-typescript": "^1.0.2",
         "@types/node": "^20.1.1",
         "@types/react": "^18.0.27",
         "@types/react-dom": "^18.0.10",
@@ -95,7 +94,6 @@
     },
     "nyc": {
         "all": true,
-        "extends": "@istanbuljs/nyc-config-typescript",
         "check-coverage": true,
         "include": [
             "src/**/*.{js,jsx,ts,tsx}"
