@@ -5,12 +5,14 @@ module.exports = {
         node: true,
     },
     extends: [
+        'react-app',
         'prettier',
         'eslint:recommended',
         'plugin:react/recommended',
         'plugin:react/jsx-runtime',
         'plugin:tailwindcss/recommended',
         'plugin:cypress/recommended',
+        'plugin:react-hooks/recommended',
     ],
     parserOptions: {
         ecmaVersion: 'latest',
@@ -20,15 +22,12 @@ module.exports = {
     settings: {
         react: { version: 'detect' },
     },
-    ignorePatterns: ['dist'],
+    ignorePatterns: ['build'],
     rules: {
         'no-shadow': 'error',
         'no-console': 'warn',
         'react/self-closing-comp': 'error',
         'react/no-array-index-key': 'error',
-        'tailwindcss/no-custom-classname': [
-            'error',
-            { config: './tailwind.config.cjs' },
-        ],
+        '@typescript-eslint/no-var-requires': 'off',
     },
 };

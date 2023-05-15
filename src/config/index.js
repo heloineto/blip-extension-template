@@ -1,6 +1,14 @@
-import developmentConfig from './appsettings.development.json';
+import isDev from 'lib/utils/isDev';
 import productionConfig from './appsettings.json';
 
-const config = import.meta.env.DEV ? developmentConfig : productionConfig;
+let config;
+
+try {
+    config = isDev
+        ? require('./appsettings.development.json')
+        : productionConfig;
+} catch (error) {
+    config = productionConfig;
+}
 
 export default config;
