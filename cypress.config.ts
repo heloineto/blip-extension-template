@@ -2,6 +2,10 @@ import '@cypress/instrument-cra';
 import { defineConfig } from 'cypress';
 
 export default defineConfig({
+    reporter: 'junit',
+    reporterOptions: {
+        mochaFile: 'cypress/reports/test-report-[hash].xml',
+    },
     env: {
         codeCoverage: {
             exclude: 'cypress/**/*.*',
