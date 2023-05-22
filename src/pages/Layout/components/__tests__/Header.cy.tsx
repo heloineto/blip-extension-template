@@ -1,5 +1,5 @@
 import i18n from 'i18next';
-import Header from './Header';
+import Header from '../Header';
 
 describe('<Header />', () => {
     beforeEach(() => {

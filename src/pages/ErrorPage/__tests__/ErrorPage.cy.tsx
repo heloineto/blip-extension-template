@@ -1,6 +1,6 @@
 import i18n from 'i18next';
 import { RouterProvider, createMemoryRouter } from 'react-router-dom';
-import ErrorPage from './ErrorPage';
+import ErrorPage from '../ErrorPage';
 
 Cypress.on('uncaught:exception', () => {
     return false;
