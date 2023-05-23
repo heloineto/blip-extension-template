@@ -122,6 +122,8 @@
             "node_modules",
             "build",
             ".vscode",
+            "coverage",
+            "azure-pipelines.yml",
             "public"
         ],
         "words": [
