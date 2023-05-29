@@ -2,9 +2,9 @@ import config from 'config';
 import { IframeMessageProxy } from 'iframe-message-proxy';
 import isDev from '../utils/isDev';
 
-const track = async (
+const track = async <TKey extends string>(
     eventName: string,
-    properties?: Record<string, unknown>
+    properties?: Record<TKey, unknown>
 ) => {
     if (isDev) {
         return false;
