@@ -12,6 +12,7 @@ module.exports = defineConfig({
         screenshotOnRunFailure: false,
         setupNodeEvents: (on, config) => {
             require('@cypress/code-coverage/task')(on, config);
+
             return config;
         },
         devServer: {

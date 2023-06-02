@@ -15,7 +15,8 @@
         "cypress": "cypress open --component",
         "test": "npm run test:cypress",
         "test:cypress": "cypress run --component",
-        "test:coverage": "npm run test"
+        "test:coverage": "npm run test",
+        "test:result": "nyc report --reporter=text && nyc report --reporter=text-summary"
     },
     "dependencies": {
         "@fontsource/nunito-sans": "^4.5.10",
@@ -91,7 +92,6 @@
     },
     "nyc": {
         "all": true,
-        "check-coverage": true,
         "include": [
             "src/**/*.{js,jsx,ts,tsx}"
         ],
@@ -112,6 +112,8 @@
             "node_modules",
             "build",
             ".vscode",
+            "coverage",
+            "azure-pipelines.yml",
             "public"
         ],
         "words": [
