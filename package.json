@@ -95,8 +95,6 @@
     },
     "nyc": {
         "all": true,
-        "extends": "@istanbuljs/nyc-config-typescript",
-        "check-coverage": true,
         "include": [
             "src/**/*.{js,jsx,ts,tsx}"
         ],
