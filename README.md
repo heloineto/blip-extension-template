@@ -1,5 +1,5 @@
 <p align="center">
-  <img src="./public/blip.svg" width="100px" align="center" alt="Blip logo" />
+  <img src="https://raw.githubusercontent.com/heloineto/blip-extension-template/main/public/blip.svg" width="100px" align="center" alt="Blip logo" />
   <h1 align="center">Blip Extension Template</h1>
   <p align="center">
     Scaffold extensions for the Blip platform
