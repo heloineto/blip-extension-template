@@ -1,5 +1,5 @@
-import config from 'config';
 import { IframeMessageProxy } from 'iframe-message-proxy';
+import config from '../../config';
 import isDev from '../utils/isDev';
 
 const track = async (eventName, properties) => {
