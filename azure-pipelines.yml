@@ -40,10 +40,12 @@ extends:
               dependsOn: build
               environment: staging
               ServiceConnection: 'AKS BOT BETA-STAGING-$(System.TeamProject)'
+              # Add Key Vaults' variable groups here
               variables: []
             - name: production
               condition: and(or(eq(variables['build.sourceBranchName'], 'master'), eq(variables['build.sourceBranchName'], 'main')), ne(variables['Build.Reason'], 'PullRequest'))
               dependsOn: staging
               environment: production
+              # Add Key Vaults' variable groups here
               variables: []
               ServiceConnection: 'AKS BOT PROD-$(System.TeamProject)'
