@@ -6,7 +6,7 @@ const Home = () => {
     const [count, setCount] = useState(0);
 
     return (
-        <div className="text-neutral-dark-city flex h-full flex-col items-center justify-center gap-4 py-24">
+        <div className="flex h-full flex-col items-center justify-center gap-4 py-24 text-neutral-dark-city">
             <a
                 href="https://takenet.github.io/blip-ds"
                 target="_blank"

@@ -1,3 +1,3 @@
-const isDev = import.meta.env.DEV;
+const isDev = true;
 
 export default isDev;

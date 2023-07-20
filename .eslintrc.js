@@ -5,6 +5,7 @@ module.exports = {
         node: true,
     },
     extends: [
+        'react-app',
         'prettier',
         'eslint:recommended',
         'plugin:react/recommended',
@@ -29,6 +30,10 @@ module.exports = {
             parserOptions: { project: ['./tsconfig.json'] },
             rules: {
                 '@typescript-eslint/non-nullable-type-assertion-style': 'off',
+                '@typescript-eslint/no-misused-promises': [
+                    'error',
+                    { checksVoidReturn: false },
+                ],
             },
         },
     ],
@@ -36,17 +41,13 @@ module.exports = {
     settings: {
         react: { version: 'detect' },
     },
-    ignorePatterns: ['dist'],
+    ignorePatterns: ['build'],
     rules: {
         'no-shadow': 'error',
         'no-console': 'warn',
         '@typescript-eslint/consistent-type-imports': 'error',
         'react/self-closing-comp': 'error',
         'react/no-array-index-key': 'error',
-        'tailwindcss/no-custom-classname': [
-            'error',
-            { config: './tailwind.config.cjs' },
-        ],
         '@typescript-eslint/no-var-requires': 'off',
     },
 };

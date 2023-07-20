@@ -1,5 +1,5 @@
 import i18n from 'i18next';
-import Home from './Home';
+import Home from '../Home';
 
 describe('<Home />', () => {
     beforeEach(() => {

@@ -1,5 +1,5 @@
 <p align="center">
-  <img src="./public/blip.svg" width="100px" align="center" alt="Blip logo" />
+  <img src="https://raw.githubusercontent.com/heloineto/blip-extension-template/main/public/blip.svg" width="100px" align="center" alt="Blip logo" />
   <h1 align="center">Blip Extension Template</h1>
   <p align="center">
     Scaffold extensions for the Blip platform
@@ -30,7 +30,7 @@ See [create-blip-extension](https://github.com/heloineto/create-blip-extension#r
 -   ESLint, Prettier & CSpell
 -   Husky with lint-staged and commitlint
 -   i18next
--   Cypress and Vitest
+-   Cypress
 
 > Note: Although recommended, you don't have use this template to create Blip extensions.
 > You can use any stack as long as you can render your web app as an iframe in the Blip portal.
@@ -59,6 +59,10 @@ Begin by scaffolding your project following the instructions on the [installatio
 
 After running the development server, you will be able to see the extension running on http://localhost:3000/.
 
+### Step 2: Running the extension inside Blip
+
+To be able to communicate with the main platform, your extension must be running inside the Blip platform. Due to company policy, I can't show you how to do it here, so if you are interested in learning how to do this, please reach out.
+
 ### Step 3: Using the Blip APIs
 
 The Blip platform provide multiple API endpoints that allow you to communicate with the main platform.
@@ -74,6 +78,33 @@ As I understand, not everything is fully documented. If you can't find what you 
 As a web application, you can use any API you want, or develop your own.
 
 Simply make HTTP requests inside your extension. [See how to do this in React](https://react.dev/reference/react/useEffect#fetching-data-with-effects).
+
+### Step 5: CI/CD
+
+This template comes with a CI/CD pipeline already set up for Azure DevOps. You can see it in `azure-pipelines.yml`. However, this pipeline is specific to my organization (Blip), and uses internal templates.
+
+If you are not part of Blip, you can use this pipeline as a reference to create your own.
+
+These files are related to the pipeline, and can be removed if you are not using it:
+
+```
+- azure-pipelines.yml
+- Dockerfile
+- charts/*
+```
+
+### Step 5: Testing
+
+The old template used Jest and RTL (React Testing Library), however, there were some issues with it, that would make tests very painful to write:
+
+-   JSDOM doesn't support web components (widely used by Blip Design System)
+-   RTL doesn't actually render the component, it only renders a representation of it. This causes a lot ot problems and the need to constantly mock things.
+
+To fix this issue, I decided to switch over to Cypress. Cypress is way more powerful, and alongside of solving the problems mentioned above, it also:
+
+-   Allows for better coverage (It actually renders the component)
+-   Visual testing (so you can see if your component is rendering correctly)
+-   Easier and more intuitive API
 
 ### Step 5: Develop!
 

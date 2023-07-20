@@ -1,6 +1,6 @@
 import i18n from 'i18next';
 import { RouterProvider, createMemoryRouter } from 'react-router-dom';
-import Layout from './Layout';
+import Layout from '../Layout';
 
 const router = createMemoryRouter(
     [

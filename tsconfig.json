@@ -1,6 +1,6 @@
 {
     "compilerOptions": {
-        "target": "ESNext",
+        "target": "ES5",
         "useDefineForClassFields": true,
         "lib": ["DOM", "DOM.Iterable", "ESNext"],
         "allowJs": false,
@@ -16,9 +16,7 @@
         "noEmit": true,
         "jsx": "preserve",
         "types": ["cypress", "node"],
-        "baseUrl": "./src",
-        "paths": { "@/*": ["./*"] }
+        "baseUrl": "src"
     },
-    "include": ["src"],
-    "references": [{ "path": "./tsconfig.node.json" }]
+    "include": ["src"]
 }

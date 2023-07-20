@@ -4,11 +4,11 @@ const Header = () => {
     const { t } = useTranslation();
 
     return (
-        <header className="border-neutral-medium-wave flex items-center border-b pb-4 pt-6">
-            <h1 className="text-neutral-dark-city text-2xl font-semibold">
+        <header className="flex items-center border-b border-neutral-medium-wave pb-4 pt-6">
+            <h1 className="text-2xl font-semibold text-neutral-dark-city">
                 {t('header.title')}
             </h1>
-            <div className="text-neutral-medium-cloud ml-2 cursor-help pt-2">
+            <div className="ml-2 cursor-help pt-2 text-neutral-medium-cloud">
                 <bds-tooltip
                     position="right-center"
                     tooltip-text={t('header.information')}
