@@ -4,21 +4,21 @@ import { Outlet, useLocation } from 'react-router-dom';
 import Header from './components/Header';
 
 const Layout = () => {
-    const location = useLocation();
+  const location = useLocation();
 
-    useEffect(() => {
-        void track('page-opened', {
-            pathname: location.pathname,
-            state: location.state,
-        });
-    }, [location]);
+  useEffect(() => {
+    void track('page-opened', {
+      pathname: location.pathname,
+      state: location.state,
+    });
+  }, [location]);
 
-    return (
-        <div className="flex h-screen flex-col overflow-auto px-10">
-            <Header />
-            <Outlet />
-        </div>
-    );
+  return (
+    <div className="flex h-screen flex-col overflow-auto px-10">
+      <Header />
+      <Outlet />
+    </div>
+  );
 };
 
 export default Layout;
