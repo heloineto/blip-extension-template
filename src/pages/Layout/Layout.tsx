@@ -1,4 +1,4 @@
-import track from 'lib/iframe-messages/track';
+import track from 'lib/utils/track';
 import { useEffect } from 'react';
 import { Outlet, useLocation } from 'react-router-dom';
 import Header from './components/Header';

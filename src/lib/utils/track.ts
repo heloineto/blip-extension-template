@@ -1,6 +1,6 @@
 import { IframeMessageProxy } from 'iframe-message-proxy';
 import config from '../../config';
-import isDev from '../utils/isDev';
+import isDev from './isDev';
 
 const track = async <TKey extends string>(
     eventName: string,
