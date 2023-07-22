@@ -1,143 +1,134 @@
 {
-    "name": "blip-extension-template",
-    "private": true,
-    "version": "0.0.0",
-    "scripts": {
-        "start": "react-scripts -r @cypress/instrument-cra start",
-        "build": "react-scripts build",
-        "eject": "react-scripts eject",
-        "dev": "npm run start",
-        "format": "prettier --write . --ignore-path .gitignore",
-        "lint": "eslint .",
-        "lint:fix": "eslint . --fix",
-        "spell": "cspell lint .",
-        "prepare": "husky install",
-        "cypress": "cypress open --component",
-        "test": "npm run test:cypress",
-        "test:cypress": "cypress run --component",
-        "test:coverage": "npm run test",
-        "test:result": "nyc report --reporter=text && nyc report --reporter=text-summary"
-    },
-    "dependencies": {
-        "@fontsource/nunito-sans": "^4.5.10",
-        "blip-ds": "^1.246.2",
-        "i18next": "^22.4.11",
-        "iframe-message-proxy": "^1.2.0",
-        "react": "^18.2.0",
-        "react-dom": "^18.2.0",
-        "react-i18next": "^12.2.0",
-        "react-router-dom": "^6.9.0"
-    },
-    "devDependencies": {
-        "@commitlint/cli": "^17.4.4",
-        "@commitlint/config-conventional": "^17.4.4",
-        "@cspell/dict-es-es": "^2.2.4",
-        "@cspell/dict-pt-br": "^2.1.4",
-        "@cypress/code-coverage": "^3.10.4",
-        "@cypress/instrument-cra": "^1.4.0",
-        "@types/node": "^20.1.1",
-        "@types/react": "^18.0.27",
-        "@types/react-dom": "^18.0.10",
-        "@typescript-eslint/eslint-plugin": "^5.54.1",
-        "@typescript-eslint/parser": "^5.54.1",
-        "autoprefixer": "^10.4.14",
-        "cspell": "^6.29.3",
-        "cypress": "^12.9.0",
-        "eslint": "^8.36.0",
-        "eslint-config-prettier": "^8.7.0",
-        "eslint-plugin-cypress": "^2.13.2",
-        "eslint-plugin-react": "^7.32.2",
-        "eslint-plugin-react-hooks": "^4.6.0",
-        "eslint-plugin-tailwindcss": "^3.10.1",
-        "husky": "^8.0.3",
-        "lint-staged": "^13.2.0",
-        "postcss": "^8.4.21",
-        "prettier": "2.8.4",
-        "react-scripts": "^5.0.1",
-        "tailwind-blip-ds": "^1.0.4",
-        "tailwindcss": "^3.2.7",
-        "typescript": "^4.9.5"
-    },
-    "browserslist": {
-        "production": [
-            ">0.2%",
-            "not dead",
-            "not op_mini all"
-        ],
-        "development": [
-            "last 1 chrome version",
-            "last 1 firefox version",
-            "last 1 safari version"
-        ]
-    },
-    "postcss": {
-        "plugins": {
-            "tailwindcss": {},
-            "autoprefixer": {}
-        }
-    },
-    "prettier": {
-        "singleQuote": true,
-        "trailingComma": "es5",
-        "endOfLine": "auto",
-        "tabWidth": 4,
-        "useTabs": false,
-        "semi": true
-    },
-    "commitlint": {
-        "extends": [
-            "@commitlint/config-conventional"
-        ]
-    },
-    "lint-staged": {
-        "./src/**/*.*": "prettier --write",
-        "./src/**/*.{js,jsx,ts,tsx}": "eslint --fix"
-    },
-    "nyc": {
-        "all": true,
-        "include": [
-            "src/**/*.{js,jsx,ts,tsx}"
-        ],
-        "exclude": [
-            "cypress/**/*.*",
-            "**/*.d.ts",
-            "**/*.cy.tsx",
-            "**/*.cy.ts"
-        ]
-    },
-    "cspell": {
-        "import": [
-            "@cspell/dict-pt-br/cspell-ext.json",
-            "@cspell/dict-es-es/cspell-ext.json"
-        ],
-        "language": "en,es,pt,pt_BR",
-        "ignorePaths": [
-            "node_modules",
-            "build",
-            ".vscode",
-            "coverage",
-            "azure-pipelines.yml",
-            "public"
-        ],
-        "words": [
-            "appsettings",
-            "classname",
-            "commitlint",
-            "datetime",
-            "degit",
-            "firefox",
-            "fontsource",
-            "Fontsource",
-            "Heloi",
-            "heloineto",
-            "iframe",
-            "lcov",
-            "Neto",
-            "nunito",
-            "Nunito",
-            "prestart",
-            "tailwindcss",
-            "takenet"
-        ]
+  "name": "blip-extension-template",
+  "private": true,
+  "version": "0.0.0",
+  "type": "module",
+  "scripts": {
+    "dev": "vite",
+    "start": "npm run dev",
+    "build": "tsc && vite build",
+    "lint": "eslint . --ext ts,tsx --report-unused-disable-directives --max-warnings 0",
+    "preview": "vite preview",
+    "format": "prettier --write .",
+    "lint:fix": "npm run lint --fix",
+    "spell": "cspell lint .",
+    "prepare": "husky install",
+    "cypress": "cypress open --component",
+    "test": "npm run test:cypress",
+    "test:cypress": "cypress run --component",
+    "test:coverage": "npm run test",
+    "test:result": "nyc report --reporter=text && nyc report --reporter=text-summary"
+  },
+  "dependencies": {
+    "@fontsource/nunito-sans": "^5.0.5",
+    "blip-ds": "^1.260.2",
+    "blip-iframe": "^0.0.3",
+    "i18next": "^23.2.11",
+    "react": "^18.2.0",
+    "react-dom": "^18.2.0",
+    "react-i18next": "^13.0.2",
+    "react-router-dom": "^6.14.2"
+  },
+  "devDependencies": {
+    "@commitlint/cli": "^17.6.7",
+    "@commitlint/config-conventional": "^17.6.7",
+    "@cspell/dict-es-es": "^2.2.6",
+    "@cspell/dict-pt-br": "^2.2.0",
+    "@cypress/code-coverage": "^3.11.0",
+    "@cypress/instrument-cra": "^1.4.0",
+    "@types/node": "^20.4.3",
+    "@types/react": "^18.2.15",
+    "@types/react-dom": "^18.2.7",
+    "@typescript-eslint/eslint-plugin": "^6.1.0",
+    "@typescript-eslint/parser": "^6.1.0",
+    "@vitejs/plugin-react": "^4.0.3",
+    "autoprefixer": "^10.4.14",
+    "cspell": "^6.31.2",
+    "cypress": "^12.17.2",
+    "eslint": "^8.45.0",
+    "eslint-config-prettier": "^8.8.0",
+    "eslint-plugin-cypress": "^2.13.3",
+    "eslint-plugin-react": "^7.33.0",
+    "eslint-plugin-react-hooks": "^4.6.0",
+    "eslint-plugin-react-refresh": "^0.4.3",
+    "eslint-plugin-tailwindcss": "^3.13.0",
+    "husky": "^8.0.3",
+    "lint-staged": "^13.2.3",
+    "postcss": "^8.4.27",
+    "prettier": "^3.0.0",
+    "tailwind-blip-ds": "^1.0.4",
+    "tailwindcss": "^3.3.3",
+    "typescript": "^5.1.6",
+    "vite": "^4.4.5"
+  },
+  "postcss": {
+    "plugins": {
+      "tailwindcss": {},
+      "autoprefixer": {}
     }
+  },
+  "prettier": {
+    "singleQuote": true,
+    "trailingComma": "es5",
+    "endOfLine": "auto",
+    "tabWidth": 2,
+    "useTabs": false,
+    "semi": true
+  },
+  "commitlint": {
+    "extends": [
+      "@commitlint/config-conventional"
+    ]
+  },
+  "lint-staged": {
+    "./src/**/*.*": "prettier --write",
+    "./src/**/*.{js,jsx,ts,tsx}": "eslint --fix"
+  },
+  "nyc": {
+    "all": true,
+    "include": [
+      "src/**/*.{js,jsx,ts,tsx}"
+    ],
+    "exclude": [
+      "cypress/**/*.*",
+      "**/*.d.ts",
+      "**/*.cy.tsx",
+      "**/*.cy.ts"
+    ]
+  },
+  "cspell": {
+    "import": [
+      "@cspell/dict-pt-br/cspell-ext.json",
+      "@cspell/dict-es-es/cspell-ext.json"
+    ],
+    "language": "en,es,pt,pt_BR",
+    "ignorePaths": [
+      "node_modules",
+      "build",
+      ".vscode",
+      "coverage",
+      "azure-pipelines.yml",
+      "public"
+    ],
+    "words": [
+      "appsettings",
+      "classname",
+      "commitlint",
+      "datetime",
+      "degit",
+      "firefox",
+      "fontsource",
+      "Fontsource",
+      "Heloi",
+      "heloineto",
+      "iframe",
+      "lcov",
+      "Neto",
+      "nunito",
+      "Nunito",
+      "prestart",
+      "tailwindcss",
+      "takenet"
+    ]
+  }
 }
