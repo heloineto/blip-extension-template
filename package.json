@@ -115,6 +115,7 @@
         "ignorePaths": [
             "node_modules",
             "build",
+            "charts",
             ".vscode",
             "coverage",
             "azure-pipelines.yml",
@@ -137,7 +138,8 @@
             "Nunito",
             "prestart",
             "tailwindcss",
-            "takenet"
+            "takenet",
+            "nginx"
         ]
     }
 }
