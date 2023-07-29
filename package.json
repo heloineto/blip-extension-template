@@ -116,6 +116,7 @@
     "ignorePaths": [
       "node_modules",
       "build",
+      "dist",
       ".vscode",
       "coverage",
       "azure-pipelines.yml",
