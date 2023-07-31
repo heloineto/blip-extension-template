@@ -121,9 +121,12 @@
       ".vscode",
       "coverage",
       "azure-pipelines.yml",
-      "public"
+      "public",
+      "charts",
+      "cypress/fixtures"
     ],
     "words": [
+      "nginx",
       "appsettings",
       "commitlint",
       "datetime",
