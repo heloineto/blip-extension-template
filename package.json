@@ -16,7 +16,8 @@
     "test": "npm run test:cypress",
     "test:cypress": "cypress run --component",
     "test:coverage": "npm run test",
-    "test:result": "nyc report --reporter=text && nyc report --reporter=text-summary"
+    "test:result": "nyc report --reporter=text && nyc report --reporter=text-summary",
+    "check": "npm run lint:fix && npm run format && npm run spell && npm run test:coverage && npm run test:result && npm run build"
   },
   "dependencies": {
     "@fontsource/nunito-sans": "^4.5.10",
