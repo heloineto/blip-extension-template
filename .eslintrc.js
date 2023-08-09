@@ -41,7 +41,7 @@ module.exports = {
   settings: {
     react: { version: 'detect' },
   },
-  ignorePatterns: ['build'],
+  ignorePatterns: ['build', 'dist'],
   rules: {
     'no-shadow': 'error',
     'no-console': 'warn',
