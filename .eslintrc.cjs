@@ -12,7 +12,7 @@ module.exports = {
     'plugin:cypress/recommended',
     'plugin:react-hooks/recommended',
   ],
-  ignorePatterns: ['dist', '.eslintrc.cjs'],
+  ignorePatterns: ['build', 'dist', '.eslintrc.cjs'],
   parser: '@typescript-eslint/parser',
   plugins: ['react', '@typescript-eslint', 'react-refresh'],
   parserOptions: {
