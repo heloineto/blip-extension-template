@@ -5,8 +5,7 @@ module.exports = {
     node: true,
   },
   extends: [
-    "next/core-web-vitals",
-    'react-app',
+    'next/core-web-vitals',
     'prettier',
     'eslint:recommended',
     'plugin:react/recommended',
@@ -14,7 +13,6 @@ module.exports = {
     'plugin:@typescript-eslint/recommended',
     'plugin:tailwindcss/recommended',
     'plugin:cypress/recommended',
-    'plugin:react-hooks/recommended',
   ],
   parser: '@typescript-eslint/parser',
   parserOptions: {
