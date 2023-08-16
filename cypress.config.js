@@ -2,11 +2,11 @@ require('@cypress/instrument-cra');
 const { defineConfig } = require('cypress');
 
 module.exports = defineConfig({
-    env: {
-        codeCoverage: {
-            exclude: 'cypress/**/*.*',
-        },
+  env: {
+    codeCoverage: {
+      exclude: 'cypress/**/*.*',
     },
+  },
   component: {
     video: false,
     screenshotOnRunFailure: false,
