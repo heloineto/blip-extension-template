@@ -5,11 +5,11 @@ export type Config = typeof productionConfig;
 let config: Config;
 
 try {
-    config = isDev
-        ? (require('./appsettings.development.json') as Config)
-        : productionConfig;
+  config = isDev
+    ? (require('./appsettings.development.json') as Config)
+    : productionConfig;
 } catch (error) {
-    config = productionConfig;
+  config = productionConfig;
 }
 
 export default config;

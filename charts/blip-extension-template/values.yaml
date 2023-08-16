@@ -3,36 +3,36 @@
 fullnameOverride: blip-extension-template
 replicaCount: 1
 image:
-    repository: blip-extension-template
-    tag: #{Build.BuildId}#
-    pullPolicy: IfNotPresent
-    imagePullSecretName: acr-takeprivate-secret
+  repository: blip-extension-template
+  tag: #{Build.BuildId}#
+  pullPolicy: IfNotPresent
+  imagePullSecretName: acr-takeprivate-secret
 imagePullSecrets: []
 service:
-    type: ClusterIP
-    port: 80
+  type: ClusterIP
+  port: 80
 
 probes:
-    enabled: false
+  enabled: false
 
 ingress:
-    enabled: true
-    whitelist:
-        ranges:
-    annotations:
-        kubernetes.io/ingress.class: nginx
-        nginx.ingress.kubernetes.io/proxy-body-size: '0'
-    hostName: hostName
-    tls:
-        secretName: secretName
+  enabled: true
+  whitelist:
+    ranges:
+  annotations:
+    kubernetes.io/ingress.class: nginx
+    nginx.ingress.kubernetes.io/proxy-body-size: '0'
+  hostName: hostName
+  tls:
+    secretName: secretName
 secrets: {}
 resources:
-    limits:
-        cpu: cpuLimit
-        memory: memoryLimit
-    requests:
-        cpu: cpuRequests
-        memory: memoryRequests
+  limits:
+    cpu: cpuLimit
+    memory: memoryLimit
+  requests:
+    cpu: cpuRequests
+    memory: memoryRequests
 nodeSelector: {}
 
 tolerations: []
@@ -40,17 +40,17 @@ tolerations: []
 affinity: {}
 
 environment:
-    stage: staging
+  stage: staging
 
 appSettings:
-    configMap: blip-extension-template
-    path: /app/src/config/appsettings.json
-    subPath: appsettings.json
+  configMap: blip-extension-template
+  path: /app/src/config/appsettings.json
+  subPath: appsettings.json
 
 autoscale:
-    minReplicas: minReplicas
-    maxReplicas: maxReplicas
-    averageCPUUtilization: averageCpuUtilization
+  minReplicas: minReplicas
+  maxReplicas: maxReplicas
+  averageCPUUtilization: averageCpuUtilization
 
 team: csgrowth
 

@@ -2,11 +2,11 @@ FROM node:16-alpine as buildContainer
 
 WORKDIR /app
 
-COPY package.json /app
+COPY package*.json /app/
 
 RUN ["npm", "install"]
 
-COPY . /app
+COPY . .
 
 RUN ["npm", "run", "build"]
 

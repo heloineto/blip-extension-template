@@ -4,21 +4,21 @@ import Home from './pages/Home';
 import Layout from './pages/Layout';
 
 const router = createBrowserRouter([
-    {
-        path: '/',
-        element: <Layout />,
-        errorElement: <ErrorPage />,
-        children: [
-            {
-                index: true,
-                element: <Home />,
-            },
-        ],
-    },
+  {
+    path: '/',
+    element: <Layout />,
+    errorElement: <ErrorPage />,
+    children: [
+      {
+        index: true,
+        element: <Home />,
+      },
+    ],
+  },
 ]);
 
 const Routes = () => {
-    return <RouterProvider router={router} />;
+  return <RouterProvider router={router} />;
 };
 
 export default Routes;
