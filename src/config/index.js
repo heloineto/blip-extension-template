@@ -4,11 +4,9 @@ import productionConfig from './appsettings.json';
 let config;
 
 try {
-    config = isDev
-        ? require('./appsettings.development.json')
-        : productionConfig;
+  config = isDev ? require('./appsettings.development.json') : productionConfig;
 } catch (error) {
-    config = productionConfig;
+  config = productionConfig;
 }
 
 export default config;
