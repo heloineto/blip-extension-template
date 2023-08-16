@@ -2,10 +2,7 @@ import iframe from 'blip-iframe';
 import config from '../../config';
 import isDev from './isDev';
 
-const track = async <TKey extends string>(
-  eventName: string,
-  properties?: Record<TKey, unknown>
-) => {
+const track = async (eventName, properties) => {
   if (isDev) {
     return false;
   }
