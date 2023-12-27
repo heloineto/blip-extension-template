@@ -22,7 +22,6 @@
   "dependencies": {
     "@fontsource/nunito-sans": "^5.0.8",
     "blip-ds": "^1.246.2",
-    "blip-iframe": "^0.0.5",
     "i18next": "^22.4.11",
     "iframe-message-proxy": "^1.2.0",
     "react": "^18.2.0",
