@@ -1,5 +1,5 @@
-import iframe from 'blip-iframe';
 import i18n from 'i18next';
+import { IframeMessageProxy } from 'iframe-message-proxy';
 import { initReactI18next } from 'react-i18next';
 import enTranslation from '../../assets/locales/en/translation.json';
 import esTranslation from '../../assets/locales/es/translation.json';
@@ -11,7 +11,9 @@ void i18n
     type: 'languageDetector',
     async: true,
     detect: async (callback) => {
-      const { response } = await iframe.getCurrentLanguage();
+      const { response } = await IframeMessageProxy.sendMessage({
+        action: 'getCurrentLanguage',
+      });
 
       const fallback = 'pt';
       const language = response ?? fallback;

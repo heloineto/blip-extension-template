@@ -17,12 +17,11 @@
     "test:cypress": "cypress run --component",
     "test:coverage": "npm run test",
     "test:result": "nyc report --reporter=text && nyc report --reporter=text-summary",
-    "check": "npm run lint:fix && npm run format && npm run spell && npm run test:coverage && npm run test:result && npm run build"
+    "check": "npm run lint:fix && npm run format && npm run spell && npm run build && npm run test:coverage && npm run test:result"
   },
   "dependencies": {
     "@fontsource/nunito-sans": "^5.0.8",
     "blip-ds": "^1.246.2",
-    "blip-iframe": "^0.0.4",
     "i18next": "^23.4.4",
     "iframe-message-proxy": "^1.2.0",
     "react": "^18.2.0",
