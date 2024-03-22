@@ -1,5 +1,9 @@
 import type { JSX as LocalJSX } from 'blip-ds/loader';
-import type { DetailedHTMLProps, HTMLAttributes } from 'react';
+import type {
+  DetailedHTMLProps,
+  HTMLAttributes,
+  HTMLElementTagNameMap,
+} from 'react';
 
 type StencilToReactElements<T = LocalJSX.IntrinsicElements> = {
   [P in keyof T]?: T[P] &
@@ -8,7 +12,7 @@ type StencilToReactElements<T = LocalJSX.IntrinsicElements> = {
     };
 };
 
-type StencilToReactRef<T> = {
+type StencilToReactRef<T = HTMLElementTagNameMap> = {
   [P in keyof T]: {
     ref?: DetailedHTMLProps<HTMLAttributes<T[P]>, T[P]>['ref'];
   };
@@ -16,7 +20,7 @@ type StencilToReactRef<T> = {
 
 type StencilToReact<
   T = LocalJSX.IntrinsicElements,
-  U
+  U = HTMLElementTagNameMap,
 > = StencilToReactElements<T> & StencilToReactRef<U>;
 
 declare global {
