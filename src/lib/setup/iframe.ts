@@ -1,5 +1,5 @@
 import { IframeMessageProxy } from 'iframe-message-proxy';
-import track from 'lib/utils/track';
+import track from '../utils/track';
 
 IframeMessageProxy.listen();
 

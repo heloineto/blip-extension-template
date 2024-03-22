@@ -37,10 +37,7 @@ i18n
 declare module 'i18next' {
   interface CustomTypeOptions {
     resources: {
-      translations:
-        | typeof enTranslation
-        | typeof esTranslation
-        | typeof ptTranslation;
+      translation: typeof enTranslation;
     };
   }
 }
