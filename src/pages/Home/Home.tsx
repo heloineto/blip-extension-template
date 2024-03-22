@@ -13,7 +13,7 @@ const Home = () => {
         rel="noreferrer"
       >
         <img
-          className="h-32 w-32 transition-[filter] duration-300 will-change-[filter] hover:[filter:drop-shadow(0_0_2em_#00c6d7aa)]"
+          className="size-32 transition-[filter] duration-300 will-change-[filter] hover:[filter:drop-shadow(0_0_2em_#00c6d7aa)]"
           src="/blip.svg"
           alt="blip logo"
         />

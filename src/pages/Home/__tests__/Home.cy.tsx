@@ -15,19 +15,19 @@ describe('<Home />', () => {
 
     cy.get('@button').should(
       'contain.text',
-      i18n.t('home.button-count', { count: 0 })
+      i18n.t('home.button-count', { count: 0 }),
     );
 
     cy.get('@button').click();
     cy.get('@button').should(
       'contain.text',
-      i18n.t('home.button-count', { count: 1 })
+      i18n.t('home.button-count', { count: 1 }),
     );
 
     cy.get('@button').click();
     cy.get('@button').should(
       'contain.text',
-      i18n.t('home.button-count', { count: 2 })
+      i18n.t('home.button-count', { count: 2 }),
     );
   });
 

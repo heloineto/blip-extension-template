@@ -1,47 +1,38 @@
+const { resolve } = require('node:path');
+
+const project = resolve(__dirname, 'tsconfig.json');
+
 module.exports = {
+  root: true,
   env: {
     browser: true,
-    es2021: true,
     node: true,
   },
   extends: [
-    'react-app',
-    'prettier',
-    'eslint:recommended',
-    'plugin:react/recommended',
-    'plugin:react/jsx-runtime',
-    'plugin:@typescript-eslint/recommended',
+    require.resolve('@vercel/style-guide/eslint/browser'),
+    require.resolve('@vercel/style-guide/eslint/typescript'),
+    require.resolve('@vercel/style-guide/eslint/react'),
     'plugin:tailwindcss/recommended',
     'plugin:cypress/recommended',
-    'plugin:react-hooks/recommended',
   ],
-  parser: '@typescript-eslint/parser',
+  ignorePatterns: [
+    'node_modules',
+    'dist',
+    'build',
+    'coverage',
+    'cypress',
+    'cypress.config.ts',
+  ],
   parserOptions: {
-    ecmaVersion: 'latest',
-    sourceType: 'module',
+    project,
   },
-  overrides: [
-    {
-      files: ['src/**/*.*'],
-      extends: [
-        'plugin:@typescript-eslint/strict',
-        'plugin:@typescript-eslint/recommended-requiring-type-checking',
-      ],
-      parserOptions: { project: ['./tsconfig.json'] },
-      rules: {
-        '@typescript-eslint/non-nullable-type-assertion-style': 'off',
-        '@typescript-eslint/no-misused-promises': [
-          'error',
-          { checksVoidReturn: false },
-        ],
+  settings: {
+    'import/resolver': {
+      typescript: {
+        project,
       },
     },
-  ],
-  plugins: ['react', '@typescript-eslint'],
-  settings: {
-    react: { version: 'detect' },
   },
-  ignorePatterns: ['build', 'dist', 'coverage', 'node_modules'],
   rules: {
     'no-shadow': 'error',
     'no-console': 'warn',
@@ -49,5 +40,14 @@ module.exports = {
     'react/self-closing-comp': 'error',
     'react/no-array-index-key': 'error',
     '@typescript-eslint/no-var-requires': 'off',
+    'unicorn/filename-case': 'off',
+    'import/no-default-export': 'off',
+    '@typescript-eslint/explicit-function-return-type': 'off',
+    'import/no-named-as-default': 'off',
+    'import/no-named-as-default-member': 'off',
+    'react/function-component-definition': 'off',
+    '@typescript-eslint/no-confusing-void-expression': 'off',
+    'eslint-comments/require-description': 'off',
+    '@typescript-eslint/no-floating-promises': 'off',
   },
 };
