@@ -122,7 +122,6 @@
       "cypress/fixtures"
     ],
     "words": [
-      "nginx",
       "appsettings",
       "commitlint",
       "datetime",
@@ -135,6 +134,8 @@
       "iframe",
       "lcov",
       "Neto",
+      "nginx",
+      "noreferrer",
       "nunito",
       "Nunito",
       "prestart",

@@ -1,32 +1,39 @@
 module.exports = {
+  root: true,
   env: {
     browser: true,
-    es2021: true,
     node: true,
   },
   extends: [
-    'react-app',
-    'prettier',
-    'eslint:recommended',
-    'plugin:react/recommended',
-    'plugin:react/jsx-runtime',
+    require.resolve('@vercel/style-guide/eslint/browser'),
+    require.resolve('@vercel/style-guide/eslint/react'),
     'plugin:tailwindcss/recommended',
     'plugin:cypress/recommended',
-    'plugin:react-hooks/recommended',
   ],
+  ignorePatterns: [
+    'node_modules',
+    'dist',
+    'build',
+    'coverage',
+    'cypress',
+    '**/*.d.ts',
+  ],
+  parser: '@babel/eslint-parser',
   parserOptions: {
-    ecmaVersion: 'latest',
-    sourceType: 'module',
+    babelOptions: {
+      presets: ['@babel/preset-react'],
+    },
   },
-  plugins: ['react'],
-  settings: {
-    react: { version: 'detect' },
-  },
-  ignorePatterns: ['build', 'dist', 'coverage', 'node_modules'],
   rules: {
     'no-shadow': 'error',
     'no-console': 'warn',
     'react/self-closing-comp': 'error',
     'react/no-array-index-key': 'error',
+    'unicorn/filename-case': 'off',
+    'import/no-default-export': 'off',
+    'import/no-named-as-default': 'off',
+    'import/no-named-as-default-member': 'off',
+    'react/function-component-definition': 'off',
+    'eslint-comments/require-description': 'off',
   },
 };

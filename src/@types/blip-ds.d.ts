@@ -1,5 +1,5 @@
-import type { JSX as LocalJSX } from 'blip-ds/loader';
-import type {
+import { JSX as LocalJSX } from 'blip-ds/loader';
+import {
   DetailedHTMLProps,
   HTMLAttributes,
   HTMLElementTagNameMap,
