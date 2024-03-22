@@ -1,6 +1,6 @@
 import '@cypress/code-coverage/support';
 import { mount } from 'cypress/react18';
-import 'index.css';
+import '../../src/index.css';
 import '../lib/setup/blip-ds';
 import '../lib/setup/fonts';
 import '../../src/@types/cypress.d.ts';
