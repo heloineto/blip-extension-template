@@ -17,7 +17,7 @@ type StencilToReactRef<T = HTMLElementTagNameMap> = {
 
 type StencilToReact<
   T = LocalJSX.IntrinsicElements,
-  U = HTMLElementTagNameMap
+  U = HTMLElementTagNameMap,
 > = StencilToReactElements<T> & StencilToReactRef<U>;
 
 declare global {

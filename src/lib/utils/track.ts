@@ -4,7 +4,7 @@ import isDev from './isDev';
 
 const track = async <TKey extends string>(
   eventName: string,
-  properties?: Record<TKey, unknown>
+  properties?: Record<TKey, unknown>,
 ) => {
   if (isDev) {
     return false;
