@@ -5,7 +5,7 @@ import enTranslation from '../../assets/locales/en/translation.json';
 import esTranslation from '../../assets/locales/es/translation.json';
 import ptTranslation from '../../assets/locales/pt/translation.json';
 
-void i18n
+i18n
   .use(initReactI18next)
   .use({
     type: 'languageDetector',
