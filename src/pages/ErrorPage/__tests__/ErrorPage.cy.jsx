@@ -16,7 +16,7 @@ describe('<ErrorPage />', () => {
           errorElement: <ErrorPage />,
         },
       ],
-      { initialEntries: ['/non-existent-route'] }
+      { initialEntries: ['/non-existent-route'] },
     );
 
     cy.mount(<RouterProvider router={router} />);
@@ -38,7 +38,7 @@ describe('<ErrorPage />', () => {
           errorElement: <ErrorPage />,
         },
       ],
-      { initialEntries: ['/'] }
+      { initialEntries: ['/'] },
     );
 
     cy.mount(<RouterProvider router={router} />);
@@ -46,7 +46,7 @@ describe('<ErrorPage />', () => {
     cy.get('.text-9xl').should('have.text', i18n.t('errorPage.defaultStatus'));
     cy.get('.text-xl').should(
       'have.text',
-      i18n.t('errorPage.defaultStatusText')
+      i18n.t('errorPage.defaultStatusText'),
     );
   });
 });

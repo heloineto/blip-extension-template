@@ -10,5 +10,5 @@ import root from './lib/setup/root';
 root.render(
   <React.StrictMode>
     <App />
-  </React.StrictMode>
+  </React.StrictMode>,
 );
