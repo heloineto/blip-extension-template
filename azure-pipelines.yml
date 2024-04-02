@@ -15,6 +15,7 @@ variables:
   sonarQubeTags: $(Build.Repository.Name)
   sonarQubeKey: $(Build.Repository.Name)
   sonarQubeName: $(Build.Repository.Name)
+  SkipDecorator: true
   framework: 'react'
 
 pool:
