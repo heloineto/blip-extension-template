@@ -23,7 +23,6 @@ type StencilToReact<
 declare global {
   // eslint-disable-next-line @typescript-eslint/no-namespace
   export namespace JSX {
-    // eslint-disable-next-line @typescript-eslint/no-empty-interface
     interface IntrinsicElements extends StencilToReact {}
   }
 }
