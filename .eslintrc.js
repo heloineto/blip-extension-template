@@ -35,5 +35,6 @@ module.exports = {
     'react/function-component-definition': 'off',
     'eslint-comments/require-description': 'off',
     'no-console': ['warn', { allow: ['warn', 'error'] }],
+    'import/no-cycle': 'off',
   },
 };
