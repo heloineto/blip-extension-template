@@ -35,7 +35,6 @@ module.exports = {
   },
   rules: {
     'no-shadow': 'error',
-    'no-console': 'warn',
     '@typescript-eslint/consistent-type-imports': 'error',
     'react/self-closing-comp': 'error',
     'react/no-array-index-key': 'error',
@@ -49,5 +48,16 @@ module.exports = {
     '@typescript-eslint/no-confusing-void-expression': 'off',
     'eslint-comments/require-description': 'off',
     '@typescript-eslint/no-floating-promises': 'off',
+    '@typescript-eslint/naming-convention': 'off',
+    '@typescript-eslint/prefer-nullish-coalescing': 'off',
+    '@typescript-eslint/restrict-template-expressions': [
+      'error',
+      { allowNumber: true },
+    ],
+    '@typescript-eslint/no-misused-promises': [
+      'error',
+      { checksVoidReturn: false },
+    ],
+    'no-console': ['warn', { allow: ['warn', 'error'] }],
   },
 };
