@@ -1,6 +1,6 @@
 import i18n from 'i18next';
-import { IframeMessageProxy } from 'iframe-message-proxy';
 import { initReactI18next } from 'react-i18next';
+import { IframeMessageProxy } from 'iframe-message-proxy';
 import enTranslation from '../../assets/locales/en/translation.json';
 import esTranslation from '../../assets/locales/es/translation.json';
 import ptTranslation from '../../assets/locales/pt/translation.json';

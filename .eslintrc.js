@@ -1,3 +1,7 @@
+const { resolve } = require('node:path');
+
+const project = resolve(__dirname, 'tsconfig.json');
+
 module.exports = {
   root: true,
   env: {
@@ -35,5 +39,14 @@ module.exports = {
     'import/no-named-as-default-member': 'off',
     'react/function-component-definition': 'off',
     'eslint-comments/require-description': 'off',
+    'react/self-closing-comp': 'error',
+    'react/no-array-index-key': 'error',
+    'unicorn/filename-case': 'off',
+    'import/no-default-export': 'off',
+    'import/no-named-as-default': 'off',
+    'import/no-named-as-default-member': 'off',
+    'react/function-component-definition': 'off',
+    'eslint-comments/require-description': 'off',
+    'no-console': ['warn', { allow: ['warn', 'error'] }],
   },
 };
